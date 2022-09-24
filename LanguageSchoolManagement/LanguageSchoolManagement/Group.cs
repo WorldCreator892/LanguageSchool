@@ -55,7 +55,8 @@ namespace LanguageSchoolManagement
         /// </summary>
         public string Language
         {
-            get { return _language; }            
+            get { return _language; }
+            set { if (!string.IsNullOrEmpty(value)) { _language = value; } }
         }
         /// <summary>
         /// Выбранный уровень обучения
@@ -79,6 +80,7 @@ namespace LanguageSchoolManagement
         public int Amount
         {
             get { return _amount; }
+            set { if (value >= 5 & value <= 10) { _intensity = value; } }
         }
         /// <summary>
         /// Список обучающихся
