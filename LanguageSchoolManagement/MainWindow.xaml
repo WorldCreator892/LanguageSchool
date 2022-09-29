@@ -33,6 +33,7 @@
                 <Button Content="Add new person" Height="30" Width="50" Click="ButtonClickAdd" Margin="10" />
             </StackPanel>
         </StackPanel>
+        
 
     </Grid>
 </Window>

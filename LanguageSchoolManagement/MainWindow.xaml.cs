@@ -32,9 +32,12 @@ namespace LanguageSchoolManagement
         }
         private void ButtonClickAdd(object sender, RoutedEventArgs e)
         {
-           var wds = new VerificationWindow();
+            var wds = new VerificationWindow();
             wds.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             wds.Show();
+            
+           
+           
         }
     }
 }

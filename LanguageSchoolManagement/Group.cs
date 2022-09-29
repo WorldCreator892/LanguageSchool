@@ -83,7 +83,7 @@ namespace LanguageSchoolManagement
             set { if (value >= 5 & value <= 10) { _intensity = value; } }
         }
         /// <summary>
-        /// Список обучающихся
+        /// Список обучающихся 
         /// </summary>
         public List<string> StudentNames
         {
