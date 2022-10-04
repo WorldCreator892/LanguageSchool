@@ -34,7 +34,9 @@ namespace LanguageSchoolManagement
         {
             var wds = new VerificationWindow();
             wds.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
-            wds.Show();
+            this.Hide();
+            wds.Owner = this;
+            wds.ShowDialog();
             
            
            

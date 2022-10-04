@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LanguageSchoolManagement
+namespace LanguageSchoolClassLibrary
 {
     /// <summary>
     /// Класс для создания и работы с группами обучающихся (для групповых занятий)
     /// </summary>
-    class Group
+    public class Group
     {
         /// <summary>
         /// Выбранный язык обучения
@@ -35,6 +35,10 @@ namespace LanguageSchoolManagement
         /// Уникальный идентификатор группы
         /// </summary>
         private int _groupID = -1;
+        /// <summary>
+        /// Флаг указывающий на необходимость доукомплектования группы
+        /// </summary>
+        private bool _reformingFlag = true;
 
         #region Constructors
         /// <summary>
@@ -64,7 +68,7 @@ namespace LanguageSchoolManagement
         public int Level
         {
             get { return _level; }
-            set { if(value >= _level & value >=0 & value < 3) { _level = value; } }
+            set { if (value >= _level & value >= 0 & value < 3) { _level = value; } }
         }
         /// <summary>
         /// Выбранная интенсивность обучения
@@ -79,8 +83,7 @@ namespace LanguageSchoolManagement
         /// </summary>
         public int Amount
         {
-            get { return _amount; }
-            set { if (value >= 5 & value <= 10) { _intensity = value; } }
+            get { return _amount; }            
         }
         /// <summary>
         /// Список обучающихся 
@@ -91,15 +94,15 @@ namespace LanguageSchoolManagement
             set
             {
                 bool NoEmptyOrNull = true;
-                foreach(string str in value)
+                foreach (string str in value)
                 {
-                    if(string.IsNullOrEmpty(str))
+                    if (string.IsNullOrEmpty(str))
                     {
                         NoEmptyOrNull = false;
                         break;
                     }
                 }
-                if(NoEmptyOrNull)
+                if (NoEmptyOrNull)
                 {
                     _studentNames = value;
                 }
@@ -109,12 +112,31 @@ namespace LanguageSchoolManagement
 
         #region Methods
         /// <summary>
-        /// Добавление обучающегося в группу
+        /// Добавление обучающегося в группу по заявке
         /// </summary>
-        public void AddStudent(Application AcceptedApplication)
+        public void AddStudent(CourseApplication AcceptedApplication)
         {
             StudentNames.Add(AcceptedApplication.Surname);
             _amount++;
+        }
+
+        /// <summary>
+        /// Проверка наличия студента с данной фамилией в группе
+        /// </summary>
+        public bool CheckStudentExistence(string CheckedStudentName)
+        {
+            bool ans = false;
+            if(this.StudentNames.Contains(CheckedStudentName))
+            {
+                ans = true;
+            }
+            return ans;
+        }
+
+        public void ExcludeStudent(string ExcludedStudentName)
+        {
+            this.StudentNames.Remove(ExcludedStudentName);
+            this._amount -= 1;
         }
         #endregion
     }

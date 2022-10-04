@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LanguageSchoolClassLibrary">
+      <HintPath>LanguageSchoolClassLibrary\LanguageSchoolClassLibrary\bin\Debug\LanguageSchoolClassLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -55,12 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Application.cs" />
-    <Compile Include="Group.cs" />
     <Compile Include="ReqForm.xaml.cs">
       <DependentUpon>ReqForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Student.cs" />
     <Compile Include="VerificationWindow.xaml.cs">
       <DependentUpon>VerificationWindow.xaml</DependentUpon>
     </Compile>
@@ -72,7 +72,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Course.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

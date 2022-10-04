@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LanguageSchoolManagement
+namespace LanguageSchoolClassLibrary
 {
     /// <summary>
     /// Класс для создания и работы с заявкой обучающегося
     /// </summary>
-    public class Application
-    {        
+    public class CourseApplication
+    {
         /// <summary>
         /// Фамилия обучающегося
         /// </summary>
@@ -39,11 +39,12 @@ namespace LanguageSchoolManagement
         /// Количество внесенной за обучение предоплаты
         /// </summary>
         private int _payedAmount = 0;
+
         #region Constructors
         /// <summary>
         /// Стандартный конструктор для создания экземпляра заявки на обучение
         /// </summary>
-        public Application(string AppliedSurname, string AppliedLanguage, int AppliedIntensity, int AppliedLevel, int AppliedPayment )
+        public CourseApplication(string AppliedSurname, string AppliedLanguage, int AppliedIntensity, int AppliedLevel, int AppliedPayment = 0)
         {
             Surname = AppliedSurname;
             Language = AppliedLanguage;
@@ -60,7 +61,7 @@ namespace LanguageSchoolManagement
         public string Surname
         {
             get { return _surname; }
-            set { if(!string.IsNullOrEmpty(value)) { _surname = value; } }
+            set { if (!string.IsNullOrEmpty(value)) { _surname = value; } }
         }
         /// <summary>
         /// Выбранный обучающимся язык
@@ -76,7 +77,7 @@ namespace LanguageSchoolManagement
         public int Intensity
         {
             get { return _intensity; }
-            set { if(value >= 0 & value < 3) { _intensity = value; } }
+            set { if (value >= 0 & value < 3) { _intensity = value; } }
         }
         /// <summary>
         /// Выбранный уровень обучения
@@ -92,12 +93,25 @@ namespace LanguageSchoolManagement
         public int PayedAmount
         {
             get { return _payedAmount; }
-            set { if(value >= 0) { _payedAmount = value; } else { _payedAmount = 0; } }
+            set { if (value >= 0) { _payedAmount = value; } else { _payedAmount = 0; } }
         }
         #endregion
 
         #region Methods
+        
 
+        public bool CompareApplicationPriorities(CourseApplication b)
+        {
+            bool res = true;
+            if(this.PayedAmount == 0)
+            {
+                res = false;
+            } else
+            {
+
+            }
+            return res;
+        }
         #endregion
     }
 }

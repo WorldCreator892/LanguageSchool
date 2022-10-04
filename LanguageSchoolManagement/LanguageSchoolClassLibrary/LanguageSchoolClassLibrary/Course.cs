@@ -4,17 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LanguageSchoolManagement
+namespace LanguageSchoolClassLibrary
 {
     /// <summary>
     /// Класс для создания и работы с курсом по заданному языку
     /// </summary>
     public class Course
     {        
-        /// <summary>
-        /// Список всех доступных для изучения языков
-        /// </summary>
-        private static string[] _languageList = { "English", "French", "German", "Chinese" };
         /// <summary>
         /// Изучаемый на курсе язык
         /// </summary>
@@ -47,8 +43,7 @@ namespace LanguageSchoolManagement
         /// </summary>
         public string Language
         {
-            get { return _language; }
-            set { if(string.IsNullOrEmpty(value)) { _language = value; } }
+            get { return _language; }            
         }
 
         /// <summary>
@@ -61,30 +56,25 @@ namespace LanguageSchoolManagement
 
         #endregion
 
-        #region Methods
+        #region Methods        
 
         /// <summary>
-        /// Проверяет на существование 
+        /// Исключение обучающегося из всех групп курса по заданной фамилии
         /// </summary>
-        public bool CheckLanguageExist(string CheckedLanguageName)
+        public void ExcludeStudent(string ExcludedStudentSurname)
         {
-            bool ans = false;
-            if(_languageList.Contains(CheckedLanguageName))
+            foreach(Group gr in _groups)
             {
-                ans = true;
+                if(gr.CheckStudentExistence(ExcludedStudentSurname))
+                {
+                    gr.ExcludeStudent(ExcludedStudentSurname);
+                }
             }
-            return ans;
         }
 
-        /// <summary>
-        /// Добавление нового языка в список существующих
-        /// </summary>
-        public void AddNewLanguage(string AddedLanguageName)
+        public void GroupReform(List<CourseApplication> NewApplications)
         {
-            if(!this.CheckLanguageExist(AddedLanguageName) & (!string.IsNullOrEmpty(AddedLanguageName)))
-            {
-                _languageList.Append(AddedLanguageName);
-            }
+
         }
         #endregion
     }

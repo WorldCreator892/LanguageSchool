@@ -19,6 +19,7 @@ namespace LanguageSchoolManagement
     /// </summary>
     public partial class VerificationWindow : Window
     {
+        ReqForm wds;
         public VerificationWindow()
         {
             InitializeComponent();
@@ -33,9 +34,10 @@ namespace LanguageSchoolManagement
 
         private void СhosenMakeNewOne(object sender, RoutedEventArgs e)
         {
-            var wds = new ReqForm();
+            wds = new ReqForm();
+            wds.Owner = this;
             wds.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }
