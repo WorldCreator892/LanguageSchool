@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel>
+        <StackPanel Background="#FFE8FEFF">
             <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
                 <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choice Language </Run>
                 <LineBreak />
@@ -41,6 +41,12 @@
                 <LineBreak />
             </TextBlock >
             <ComboBox x:Name="ChoiceType" Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FF783737" Offset="1"/>
+                    </LinearGradientBrush>
+                </ComboBox.Background>
                 <TextBlock>Individual</TextBlock>
                 <TextBlock>Group</TextBlock>
             </ComboBox>

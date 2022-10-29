@@ -10,15 +10,15 @@
 
 
 
-   
+
 
 
 
 
     <Grid>
-        <StackPanel>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choice Language </Run>
+        <StackPanel Background="#FFC2E9FF">
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman" Foreground="#FF133A72">
+                <Run FontSize="20" FontWeight="Bold" > Choice Language </Run>
                 <LineBreak />
             </TextBlock >
             <ComboBox x:Name="ChoiceLanguage"  Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">
@@ -27,8 +27,8 @@
                 <TextBlock>German</TextBlock>
                 <TextBlock>Chinese</TextBlock>
             </ComboBox>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choice Level </Run>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman" Foreground="#FF10356A">
+                <Run FontSize="20" FontWeight="Bold" > Choice Level </Run>
                 <LineBreak />
             </TextBlock >
             <ComboBox x:Name="ChoiceLevel" Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">
@@ -36,8 +36,8 @@
                 <TextBlock>Intermediate</TextBlock>
                 <TextBlock>Elementary</TextBlock>
             </ComboBox>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choice Intensity </Run>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman" Foreground="#FF133A72">
+                <Run FontSize="20" FontWeight="Bold" > Choice Intensity </Run>
                 <LineBreak />
             </TextBlock >
             <ComboBox x:Name="ChoiceIntensity" Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">
@@ -46,19 +46,13 @@
                 <TextBlock>Supportive</TextBlock>
             </ComboBox>
             <StackPanel>
-                <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Enter your last name </Run>
-                <LineBreak />
-                </TextBlock >
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman" Foreground="#FF133A72"><Run FontSize="20" FontWeight="Bold" Text="Enter your last name" /><LineBreak /></TextBlock>
                 <TextBox x:Name="TextSurname"  Height="30" Width="407" VerticalContentAlignment="Top" HorizontalAlignment="Left" MaxLength="250" 
-                         TextChanged="TextBox_Surname" Margin="193,0,0,0"></TextBox>
-                <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Enter your name </Run>
-                <LineBreak />
-                </TextBlock >
+                         TextChanged="TextBox_Surname" Margin="193,0,0,0"/>
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman" Foreground="#FF133A72"><Run FontSize="20" FontWeight="Bold" Text="Enter your name" /><LineBreak /></TextBlock>
                 <TextBox x:Name="TextName"  Height="30" Width="407" VerticalContentAlignment="Top" HorizontalAlignment="Left" MaxLength="250" 
-                         TextChanged="TextBox_Name" Margin="193,0,0,0"></TextBox>
-                <Button Content="Ok" Height="30" Width="50" Click="ButtonClickInfo" Margin="10" />
+                         TextChanged="TextBox_Name" Margin="193,0,0,0"/>
+                <Button Content="Ok" Height="30" Width="50" Click="ButtonClickInfo" Margin="10" Background="#FF2750A8" Foreground="#FF133A72" />
             </StackPanel>
         </StackPanel>
 

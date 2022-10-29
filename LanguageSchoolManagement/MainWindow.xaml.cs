@@ -52,14 +52,14 @@ namespace LanguageSchoolManagement
         }
         private void ButtonClickAdd(object sender, RoutedEventArgs e)
         {
-            if (ChoiceLanguage.SelectedIndex == -1 || ChoiceIntensity.SelectedIndex == -1 ||
-                ChoiceLevel.SelectedIndex == -1 || ChoiceType.SelectedIndex == -1)
-            {
-                var wds = new Mistake();
-                wds.Owner = this;
-                wds.ShowDialog();
-            }
-            else
+            //if (ChoiceLanguage.SelectedIndex == -1 || ChoiceIntensity.SelectedIndex == -1 ||
+            //    ChoiceLevel.SelectedIndex == -1 || ChoiceType.SelectedIndex == -1)
+            //{
+            //    var wds = new Mistake();
+            //    wds.Owner = this;
+            //    wds.ShowDialog();
+            //}
+            //else
             {
                 var wds = new VerificationWindow();
                 wds.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;

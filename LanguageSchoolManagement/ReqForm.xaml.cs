@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -12,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using LanguageSchoolClassLibrary;
+using Group = LanguageSchoolClassLibrary.Group;
 
 namespace LanguageSchoolManagement
 {
@@ -29,17 +32,39 @@ namespace LanguageSchoolManagement
             Groups = new List<Group>();
             application = new CourseApplication("", "", 0, 0, 0);
         }
+        public bool IsNameValid(string name)
+        {
+            bool valid = false;
+            Regex check = new Regex(@"(^[a-zA-Z]+)$");
+            valid = check.IsMatch(name);
+
+            if (valid == true)
+            {
+                return valid;
+            }
+            else
+            {
+                return valid;
+            }
+        }
+     
         private void TextBox_Surname(object sender, TextChangedEventArgs e)
         {
+           
 
         }
         private void TextBox_Name(object sender, TextChangedEventArgs e)
         {
-
+           
         }
         private void ButtonClickInfo(object sender, RoutedEventArgs e)
         {
-            if (ChoiceLanguage.SelectedIndex == -1 || ChoiceIntensity.SelectedIndex == -1 ||
+
+            if((IsNameValid(TextName.Text)) == false || (IsNameValid(TextSurname.Text) == false))
+            {
+                MessageBox.Show("Неправильный формат имени или фамилии!");
+            }
+            else if (ChoiceLanguage.SelectedIndex == -1 || ChoiceIntensity.SelectedIndex == -1 ||
                ChoiceLevel.SelectedIndex == -1 || TextSurname.Text==String.Empty || TextName.Text==String.Empty)
             {
                 var wds = new Mistake();
