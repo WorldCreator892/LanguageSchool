@@ -8,15 +8,29 @@
         WindowStartupLocation="CenterOwner"
         Title="Menu" Height="450" Width="800">
     <Grid>
-        <StackPanel Background="White">
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="40" FontWeight="Bold" Foreground="Black" >text </Run>
+        <StackPanel Background="White" Margin="20,0,21.6,0">
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Normal" FontFamily="Times New Roman">
+                <Run FontSize="20" FontWeight="Black" Foreground="Black" >Памятка</Run>
                 <LineBreak />
-                <Run FontSize="30" FontWeight="DemiBold" Foreground="Black"> text</Run>
+            </TextBlock>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Left" FontStyle="Normal" FontFamily="Times New Roman">
+                <Run FontSize="15" FontWeight="Black" Foreground="Black" >Данное приложение моделирует работу курсов иностранного языка. Оно позволяет наглядно рассмотреть процесс разбиения учеников на группы по следующим правилам:  </Run>
+                <LineBreak />
+                <LineBreak />
+                <Run FontSize="15" FontWeight="Black" Foreground="Black"> 1)	Курсы иностранного языка предлагают обучение нескольким иностранным языкам на нескольких уровнях и с разной степенью интенсивности. </Run>
+                <LineBreak />
+                <LineBreak />
+                <Run FontSize="15" FontWeight="Black" Foreground="Black"> 2)	Каждый слушатель может быть записан на обучение нескольким языкам, причем для каждого языка у него может быть свой уровень и интенсивность. </Run>
+                <LineBreak />
+                <LineBreak />
+                <Run FontSize="15" FontWeight="Black" Foreground="Black"> 3)	Занятия могут быть индивидуальные и групповые </Run>
+                <LineBreak />
+                <LineBreak />
+                <Run FontSize="15" FontWeight="Black" Foreground="Black"> Чтобы корректно смоделировать данный процесс, необходимо заполнить все требуемые поля в выбранных формах и вводить корректные данные. В большинство полей необходимо выбрать правильный (подходящий) вариант, за исключением «Имя» и «Фамилия», их заполняют вручную, используя буквы русского или английского алфавита. </Run>
                 <LineBreak />
             </TextBlock >
             <Button Content="Ok" Click="ButtonOkClick" HorizontalAlignment="Center" FontSize="30" Height="60" Width="60">
-        </Button>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>

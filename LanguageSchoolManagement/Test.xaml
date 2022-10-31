@@ -8,8 +8,8 @@
         Title="Test" Height="450" Width="800">
     <Grid>
         <Label Content="ТЕстовое окно для проверки работы, позже будет удалено" HorizontalAlignment="Left" Margin="34,36,0,0" VerticalAlignment="Top" Height="42" Width="497"/>
-        <ListBox x:Name="ListBoxTest" HorizontalAlignment="Left" Height="303" Margin="76,83,0,0" VerticalAlignment="Top" Width="679" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,266,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <ListBox x:Name="ListBoxTest" HorizontalAlignment="Left" Height="303" Margin="138,83,0,0" VerticalAlignment="Top" Width="617" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,266,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" RenderTransformOrigin="0.534,-2.436"/>
 
     </Grid>
 </Window>
