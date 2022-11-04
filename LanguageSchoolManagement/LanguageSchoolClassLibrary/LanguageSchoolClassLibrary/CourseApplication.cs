@@ -48,7 +48,10 @@ namespace LanguageSchoolClassLibrary
         /// <summary>
         /// Стандартный конструктор для создания экземпляра заявки на обучение
         /// </summary>
-        public CourseApplication(string AppliedSurname, string AppliedLanguage, int AppliedIntensity, int AppliedLevel, int AppliedPayment = 0)
+        public CourseApplication()
+        {
+        }
+    public CourseApplication(string AppliedSurname, string AppliedLanguage, int AppliedIntensity, int AppliedLevel, int AppliedPayment = 0)
         {
             Surname = AppliedSurname;
             Language = AppliedLanguage;

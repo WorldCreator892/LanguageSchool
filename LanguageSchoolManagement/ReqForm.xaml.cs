@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -13,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Serialization;
 using LanguageSchoolClassLibrary;
 using Group = LanguageSchoolClassLibrary.Group;
 
@@ -50,22 +52,18 @@ namespace LanguageSchoolManagement
      
         private void TextBox_Surname(object sender, TextChangedEventArgs e)
         {
-           
-
         }
         private void TextBox_Name(object sender, TextChangedEventArgs e)
         {
-           
         }
         private void ButtonClickInfo(object sender, RoutedEventArgs e)
         {
-
-            if((IsNameValid(TextName.Text)) == false || (IsNameValid(TextSurname.Text) == false))
+            if ((IsNameValid(TextName.Text)) == false || (IsNameValid(TextSurname.Text) == false))
             {
                 MessageBox.Show("Неправильный формат имени или фамилии!");
             }
             else if (ChoiceLanguage.SelectedIndex == -1 || ChoiceIntensity.SelectedIndex == -1 ||
-               ChoiceLevel.SelectedIndex == -1 || TextSurname.Text==String.Empty || TextName.Text==String.Empty)
+               ChoiceLevel.SelectedIndex == -1 || TextSurname.Text == String.Empty || TextName.Text == String.Empty)
             {
                 var wds = new Mistake();
                 wds.Owner = this;
@@ -73,13 +71,6 @@ namespace LanguageSchoolManagement
             }
             else
             {
-                var wds = new Adding();
-                wds.Owner = this;
-                wds.ShowDialog();
-                Close();
-
-
-
                 //Формируем заявку:
                 application.Surname = TextSurname.Text;//Заполняем фамилию.
                 string Name = TextName.Text;//Просто так для красоты, но возможно где-то потребуется.
@@ -111,19 +102,47 @@ namespace LanguageSchoolManagement
                 }
                 //Заполняем пунтк язык в заявке:
                 application.Language = ChoiceLanguage.Text;
-                //MessageBox.Show(application.Surname);
-                //MessageBox.Show(application.Language);
-                //MessageBox.Show(application.Intensity.ToString());
-                //MessageBox.Show(application.Level.ToString());
+
                 Group grup = new Group(0, application.Language, application.Level, application.Intensity);
+                //Добавление новых людей в файл 
+                List<CourseApplication> StudentList = new List<CourseApplication>();
+                XmlSerializer formatter = new XmlSerializer(typeof(List<CourseApplication>));
+                using (FileStream fs = new FileStream("Students.xml", FileMode.OpenOrCreate))
+                {
+                    List<CourseApplication> deserilizeAn = (List<CourseApplication>)formatter.Deserialize(fs);
+                    if (deserilizeAn != null)
+                    {
+                        foreach (CourseApplication app in deserilizeAn)
+                        {
+                            StudentList.Add(app);
+                        }
+                    }
+                }
+                StudentList.Add(application);
+                XmlSerializer xmlFormat = new XmlSerializer(typeof(List<CourseApplication>));
+                using (Stream fStream = new FileStream("Students.xml",
+                  FileMode.Create, FileAccess.Write, FileShare.None))
+                {
+                    xmlFormat.Serialize(fStream, StudentList);
+                }
+                var wds = new Result();
+                wds.Owner = this;
+                wds.ShowDialog();
+                wds.Close();
+                Close();
+
             }
         }
-
         private void ChoiceLevel_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
-
+        private void ButtonClickReturnInfo(object sender, RoutedEventArgs e)
+        {
+            Close();
+            var wds = new MainWindow();
+            wds.ShowDialog();
+        }
         private void Window_Closed(object sender, EventArgs e)
         {
             this.Owner.Owner.Show();

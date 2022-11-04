@@ -6,14 +6,9 @@
         xmlns:local="clr-namespace:LanguageSchoolManagement"
         mc:Ignorable="d"
          WindowStartupLocation="CenterOwner"
-        Title="Result" Height="450" Width="800">
+        Title="Result" Height="150" Width="300" Background="#FFC2E9FF">
     <Grid>
-        <DataGrid x:Name="phonesGrid" AutoGenerateColumns="True" ItemsSource="{DynamicResource ResourceKey=stud}">
-            <DataGrid.Resources>
-
-            </DataGrid.Resources>
-        </DataGrid>
-        <Button Content="Ok" Click="ButtonOkClick" HorizontalAlignment="Center" FontSize="30" Height="60" Width="60">
+        <Button Content="Generate Excel Table" Click="GenerateExcelTable" HorizontalAlignment="Center" FontSize="20" Height="100" Width="200" Background="#FF2750A8">
         </Button>
     </Grid>
 </Window>
