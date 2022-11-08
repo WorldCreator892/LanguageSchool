@@ -20,11 +20,11 @@ namespace LanguageSchoolClassLibrary
         /// </summary>
         private string _language = "Not stated";
         /// <summary>
-        /// Выбранная интенсивность обучения
+        /// Выбранная интенсивность обучения (0 - продолжительность 3 месяца, занятия раз в неделю, 1 - продолжительность 2 месяца, занятия 3 раза в неделю, 2 - продолжительность 2 недели, занятия 5 раз в неделю)
         /// </summary>
         private int _intensity = 0;
         /// <summary>
-        /// Выбранный уровень обучения
+        /// Выбранный уровень обучения (0 - базовый, 1 - средний, 2 - высокий, 3 - продвинутый)
         /// </summary>
         private int _level = 0;
         /// <summary>
@@ -32,9 +32,9 @@ namespace LanguageSchoolClassLibrary
         /// </summary>
         private int _status = 0;
         /// <summary>
-        /// Идентификатор группы
+        /// Идентификатор заявки
         /// </summary>
-        private int _groupID = -1;
+        private int _applicationID = -1;
         /// <summary>
         /// Количество внесенной за обучение предоплаты
         /// </summary>
@@ -43,6 +43,10 @@ namespace LanguageSchoolClassLibrary
         /// Время, которое заявка уже находится на рассмотрении
         /// </summary>
         private int _waitingTime = 0;
+        /// <summary>
+        /// Идентификатор приписанной группы
+        /// </summary>
+        private int _groupID = -1;
 
         #region Constructors
         /// <summary>
@@ -51,13 +55,14 @@ namespace LanguageSchoolClassLibrary
         public CourseApplication()
         {
         }
-    public CourseApplication(string AppliedSurname, string AppliedLanguage, int AppliedIntensity, int AppliedLevel, int AppliedPayment = 0)
+    public CourseApplication(string AppliedSurname, string AppliedLanguage, int AppliedIntensity, int AppliedLevel, int AppliedID, int AppliedPayment = 0)
         {
             Surname = AppliedSurname;
             Language = AppliedLanguage;
             Intensity = AppliedIntensity;
             Level = AppliedLevel;
             PayedAmount = AppliedPayment;
+            ApplicationID = AppliedID;
         }
         #endregion
 
@@ -79,7 +84,7 @@ namespace LanguageSchoolClassLibrary
             set { if (!string.IsNullOrEmpty(value)) { _language = value; } }
         }
         /// <summary>
-        /// Выбранная интенсивность обучения
+        /// Выбранная интенсивность обучения (0 - продолжительность 3 месяца, занятия раз в неделю, 1 - продолжительность 2 месяца, занятия 3 раза в неделю, 2 - продолжительность 2 недели, занятия 5 раз в неделю)
         /// </summary>
         public int Intensity
         {
@@ -87,7 +92,7 @@ namespace LanguageSchoolClassLibrary
             set { if (value >= 0 & value < 3) { _intensity = value; } }
         }
         /// <summary>
-        /// Выбранный уровень обучения
+        /// Выбранный уровень обучения (0 - базовый, 1 - средний, 2 - высокий, 3 - продвинутый)
         /// </summary>
         public int Level
         {
@@ -110,38 +115,79 @@ namespace LanguageSchoolClassLibrary
             get { return _status; }
             set { if (value < 4 & value > -1) { _status = value; } }
         }
+        /// <summary>
+        /// Идентификатор заявки
+        /// </summary>
+        public int ApplicationID
+        {
+            get { return _applicationID; }
+            set { if (value >=0) { _applicationID = value; } }
+        }
+        /// <summary>
+        /// Время, которое зыявка уже находится на рассмотрении
+        /// </summary>
+        public int WaitingTime
+        {
+            get { return _waitingTime; }
+            set { if (value >= 0) { _waitingTime = value; } }
+        }
+        /// <summary>
+        /// Идентификатор приписанной группы
+        /// </summary>
+        public int GroupID
+        {
+            get { return _groupID; }
+            set { if (value >= 0) { _groupID = value; } }
+        }
         #endregion
 
         #region Methods     
 
-        
+
 
         public int CompareTo(CourseApplication other)
         {
             int res = 0;
-            if (other.Status > this.Status)
+
+            if(other.Status * other.WaitingTime > this.Status * this.WaitingTime)
             {
                 res = 1;
-            }
-            else
+            } else
             {
-                if(other.Status < this.Status)
+                if(other.Status * other.WaitingTime < this.Status * this.WaitingTime)
                 {
                     res = -1;
                 } else
                 {
-                    if (other._waitingTime > this._waitingTime)
+                    if (other.Status > this.Status)
                     {
                         res = 1;
-                    } else
+                    }
+                    else
                     {
-                        if(other._waitingTime < this._waitingTime)
+                        if (other.Status < this.Status)
                         {
                             res = -1;
                         }
+                        else
+                        {
+                            if (other._waitingTime > this._waitingTime)
+                            {
+                                res = 1;
+                            }
+                            else
+                            {
+                                if (other._waitingTime < this._waitingTime)
+                                {
+                                    res = -1;
+                                }
+                            }
+                        }
                     }
-                }                
+                }
             }
+            
+            
             return res;
         }
 

@@ -29,7 +29,8 @@ namespace LanguageSchoolManagement
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-            sch = RandomCourseEventsAndGeneration.GenerateLanguageSchool(new List<string>() {
+            sch = RandomCourseEventsAndGeneration.GenerateLanguageSchool(
+                new List<string>() {
                 "Иван",
                 "Владимир",
                 "Александр",
@@ -70,17 +71,27 @@ namespace LanguageSchoolManagement
                 "Илья",
                 "Борис",
                 "Юлия"
-                });//40 имен.
-            sch.ReformCourses(RandomCourseEventsAndGeneration.GenerateApplications(sch));
+                }, new List<string>() {"French", "English" });//40 имен.
+            sch.ReformCourses();
             foreach (Course c in sch.Courses)
             {
+                this.ListBoxTest.Items.Add("COURSE:" + c.Language + " " + c.StandartPayment + " " + c.StudentAmount + " " + c.Groups.Count);
                 foreach (Group g in c.Groups)
                 {
+                    this.ListBoxTest.Items.Add("GROUP:" + g.ID);
                     this.ListBoxTest.Items.Add(g.Language + " " + g.Level + " " + g.Intensity + " ");
-                    foreach (string st in g.StudentNames)
+                    foreach (int st in g.StudentIDs)
                     {
-                        this.ListBoxTest.Items.Add("    " + st);
+                        this.ListBoxTest.Items.Add("STUDENT ID:    " + st);
                     }
+                }
+            }
+            foreach (Student st in sch.Students)
+            {
+                this.ListBoxTest.Items.Add("STUDENT:" + st.ID + " " + st.Surname);
+                foreach(CourseApplication c in st.Applications)
+                {
+                    this.ListBoxTest.Items.Add("APPLICATION:" + c.GroupID + " " + c.Language + " " + c.Level + " " + c.Status + " " + c.Intensity);
                 }
             }
         }

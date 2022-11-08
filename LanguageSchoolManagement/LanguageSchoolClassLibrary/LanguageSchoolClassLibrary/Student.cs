@@ -16,6 +16,10 @@ namespace LanguageSchoolClassLibrary
         /// </summary>
         private string _surname = "Not Stated";
         /// <summary>
+        /// Индивидуальный идентификатор студента
+        /// </summary>
+        private int _id = 0;
+        /// <summary>
         /// Список поданных заявок
         /// </summary>
         private List<CourseApplication> _applications = new List<CourseApplication>();
@@ -28,9 +32,10 @@ namespace LanguageSchoolClassLibrary
         /// <summary>
         /// Стандартный конструктор класса, создает экзепляр обучающегося по его фамилии
         /// </summary>
-        public Student(string StudentName)
+        public Student(string StudentName, int StudentID)
         {
             _surname = StudentName;
+            _id = StudentID;
         }
         /// <summary>
         /// Конструктор для создания экземпляра класса со значениями полей по умолчанию
@@ -74,6 +79,14 @@ namespace LanguageSchoolClassLibrary
         {
             get { return _applications; }
             set { _applications = value; }
+        }
+        /// <summary>
+        /// Личный идентификатор обучающегося
+        /// </summary>
+        public int ID
+        {
+            get { return _id; }
+            set { _id = value; }
         }
         #endregion
 
