@@ -146,5 +146,10 @@ namespace LanguageSchoolManagement
             }
            
         }
+
+        private void ButtonClickTime(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

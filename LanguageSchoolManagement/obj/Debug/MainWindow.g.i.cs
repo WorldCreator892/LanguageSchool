@@ -72,6 +72,14 @@ namespace LanguageSchoolManagement {
         #line default
         #line hidden
         
+        
+        #line 53 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.ComboBox ChoiceTime;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -115,24 +123,35 @@ namespace LanguageSchoolManagement {
             this.ChoiceType = ((System.Windows.Controls.ComboBox)(target));
             return;
             case 5:
-            
-            #line 54 "..\..\MainWindow.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.ButtonClickInfo);
-            
-            #line default
-            #line hidden
+            this.ChoiceTime = ((System.Windows.Controls.ComboBox)(target));
             return;
             case 6:
             
-            #line 55 "..\..\MainWindow.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.ButtonClickAdd);
+            #line 59 "..\..\MainWindow.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.ButtonClickInfo);
             
             #line default
             #line hidden
             return;
             case 7:
             
-            #line 58 "..\..\MainWindow.xaml"
+            #line 60 "..\..\MainWindow.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.ButtonClickTime);
+            
+            #line default
+            #line hidden
+            return;
+            case 8:
+            
+            #line 61 "..\..\MainWindow.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.ButtonClickAdd);
+            
+            #line default
+            #line hidden
+            return;
+            case 9:
+            
+            #line 64 "..\..\MainWindow.xaml"
             ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.ButtonRulesClick);
             
             #line default
