@@ -30,6 +30,7 @@ namespace LanguageSchoolManagement
         }
         private void GenerateExcelTable(object sender, RoutedEventArgs e)
         {
+
             Microsoft.Office.Interop.Excel.Application app = new Microsoft.Office.Interop.Excel.Application();
             app.Visible = true;
             app.WindowState = XlWindowState.xlMaximized;
@@ -58,9 +59,9 @@ namespace LanguageSchoolManagement
             ws.Range["B1"].Value = "Language";
             ws.Range["C1"].Value = "Level";
             ws.Range["D1"].Value = "Intensity";
-            for (int i = 2; i <= application.Count+1; i++) 
+            for (int i = 2; i <= application.Count + 1; i++)
             {
-                ws.Range["A" + i].Value = application[i-2].Surname;
+                ws.Range["A" + i].Value = application[i - 2].Surname;
                 ws.Range["B" + i].Value = application[i - 2].Language;
                 ws.Range["C" + i].Value = application[i - 2].Level;
                 ws.Range["D" + i].Value = application[i - 2].Intensity;
@@ -68,6 +69,7 @@ namespace LanguageSchoolManagement
             wb.SaveAs("C:\\Users\\admin\\Desktop\\LanguageSchool-newMain\\LanguageSchool.xlsx");
 
             Close();
+
 
         }
     }

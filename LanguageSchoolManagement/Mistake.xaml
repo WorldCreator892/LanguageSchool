@@ -17,7 +17,7 @@
             <Image Source="mistake.jpg" HorizontalAlignment="Left" VerticalAlignment="Center" Height="82" Width="84" Margin="10,0,0,0"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="111,14,10,29" Width="171" Height="46" Grid.RowSpan="2" >
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Normal" FontFamily="Times New Roman" Margin="10,0,0,0" Height="45" RenderTransformOrigin="0.521,-0.276" Foreground="#FF0B257E"><Run FontSize="10" FontWeight="Bold" Text="Поле не заполнено!" /><LineBreak /><Run FontSize="10" FontWeight="Bold" Text="Заполните и повторите попытку." /><LineBreak /></TextBlock>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Normal" FontFamily="Times New Roman" Margin="10,0,0,0" Height="45" RenderTransformOrigin="0.521,-0.276" Foreground="#FF0B257E"><Run FontSize="10" FontWeight="Bold" Text="Some area is emty!" /><LineBreak /><Run FontSize="10" FontWeight="Bold" Text="Fill and try again." /><LineBreak /></TextBlock>
         </StackPanel>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="107,0,115,0" Width="70" Grid.Row="1">
             <Button Content="Ok" Height="20" Width="45" Click="ButtonOkClick" Margin="0,10,7,10" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Foreground="#FF0B1259"  >
