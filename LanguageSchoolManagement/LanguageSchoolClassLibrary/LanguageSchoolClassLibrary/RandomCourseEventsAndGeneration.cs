@@ -25,7 +25,7 @@ namespace LanguageSchoolClassLibrary
             {
                 foreach(CourseApplication c in st.Applications)
                 {
-                    returnedList.Add(c);
+                    returnedList.Add(new CourseApplication(c));
                 }
             }
             int ExcludedStudentCount = _rnd.Next(0, School.Students.Count / 100);

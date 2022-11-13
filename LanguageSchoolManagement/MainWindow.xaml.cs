@@ -27,9 +27,7 @@ namespace LanguageSchoolManagement
         
         public MainWindow()
         {
-            InitializeComponent();
-            Test t = new Test();
-            t.ShowDialog();
+            InitializeComponent();            
         }
         private void ButtonRulesClick(object sender, RoutedEventArgs e)
         {

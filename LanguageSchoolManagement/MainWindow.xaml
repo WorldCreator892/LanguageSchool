@@ -5,29 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LanguageSchoolManagement"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <StackPanel Background="#FFA0C2FF" Margin="1,0,0,-46" RenderTransformOrigin="0.5,0.5">
-            <StackPanel.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.209"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </StackPanel.RenderTransform>
+        Title="MainWindow" Height="571" Width="800" MinWidth="800" MinHeight="571" Background="#FFA0C2FF">
+    <Grid Height="571" MinHeight="571">
+        <StackPanel Margin="1,0,0,-46" RenderTransformOrigin="0.5,0.5">
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman" VerticalAlignment="Center">
+                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Welcome to our Language School Management Simulator! </Run>
+                <LineBreak />
+                <LineBreak />
+                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > To begin the simulation insert generation parameters using the form below: </Run>
+                <LineBreak />
+            </TextBlock >            
             <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choice Language </Run>
+                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choose Language </Run>
                 <LineBreak />
             </TextBlock >
-            <ComboBox x:Name="ChoiceLanguage"  Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">
+            <ComboBox x:Name="ChoiceLanguage"  Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">                
                 <TextBlock>English</TextBlock>
                 <TextBlock>French</TextBlock>
                 <TextBlock>German</TextBlock>
                 <TextBlock>Chinese</TextBlock>
             </ComboBox>
             <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choice Level </Run>
+                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choose Level </Run>
                 <LineBreak />
             </TextBlock >
             <ComboBox x:Name="ChoiceLevel" Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">
@@ -36,7 +35,7 @@
                 <TextBlock>Elementary</TextBlock>
             </ComboBox>
             <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choice Intensity </Run>
+                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choose Intensity </Run>
                 <LineBreak />
             </TextBlock >
             <ComboBox x:Name="ChoiceIntensity" Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">
@@ -45,10 +44,10 @@
                 <TextBlock>Supportive</TextBlock>
             </ComboBox>
             <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choice Type </Run>
+                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choose Type </Run>
                 <LineBreak />
             </TextBlock >
-            <ComboBox x:Name="ChoiceType" Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center" Margin="196,0">
+            <ComboBox x:Name="ChoiceType" Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">
                 <ComboBox.Background>
                     <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                         <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -59,10 +58,10 @@
                 <TextBlock><Run Text="Group"/></TextBlock>
             </ComboBox>
             <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choice Time </Run>
+                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choose Time </Run>
                 <LineBreak />
             </TextBlock >
-            <ComboBox x:Name="ChoiceTime" Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center" Margin="196,0">
+            <ComboBox x:Name="ChoiceTime" Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">
                 <TextBlock><Run Text="3 months"/></TextBlock>
                 <TextBlock><Run Text="5 months"/></TextBlock>
                 <TextBlock><Run Text="7 months"/></TextBlock>
@@ -70,8 +69,8 @@
                 <TextBlock><Run Text="12 months"/></TextBlock>
                 
             </ComboBox>
-            <StackPanel Height="123" Margin="0,0,10,0" RenderTransformOrigin="0.496,0.489" >
-                <Button Content="See result" Height="30" Click="ButtonClickInfo" Margin="257,10,297,10" RenderTransformOrigin="0.5,0.5" Background="#FF1A3674"  >
+            <StackPanel Height="123" Margin="0,0,10,0" RenderTransformOrigin="0.496,0.489" HorizontalAlignment="Center" >
+                <Button Content="See result" Height="30" Click="ButtonClickInfo" RenderTransformOrigin="0.5,0.5" Background="#FF1A3674" HorizontalAlignment="Center" Width="228" Margin="0,20"  >
                     <Button.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -81,7 +80,7 @@
                         </TransformGroup>
                     </Button.RenderTransform>
                 </Button>
-                <Button Content="Add new person" Height="30" Click="ButtonClickAdd" Margin="0,27,293,10" HorizontalAlignment="Right" Width="228" RenderTransformOrigin="0.496,-3.721" Background="#FF1A3674"   />
+                <Button Content="Add new person" Height="30" Click="ButtonClickAdd" HorizontalAlignment="Center" Width="228" RenderTransformOrigin="0.496,-3.721" Background="#FF1A3674"   />
             </StackPanel>
         </StackPanel>
         <Button Click="ButtonRulesClick" HorizontalAlignment="Left" FontSize="30" Height="60" Width="60">

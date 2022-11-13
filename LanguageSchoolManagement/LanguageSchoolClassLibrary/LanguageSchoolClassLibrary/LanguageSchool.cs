@@ -142,8 +142,9 @@ namespace LanguageSchoolClassLibrary
         public void ReformCourses()
         {
             List<CourseApplication> NewApplications = new List<CourseApplication>();
-            
-            foreach(Course ExistingCourse in this.Courses) //поиск групп с окончившимся обучением и перевод на следующий уровень
+            NewApplications = RandomCourseEventsAndGeneration.GenerateApplications(this);
+
+            foreach (Course ExistingCourse in this.Courses) //поиск групп с окончившимся обучением и перевод на следующий уровень
             {
                 foreach(Group gr in ExistingCourse.Groups)
                 {
@@ -156,17 +157,32 @@ namespace LanguageSchoolClassLibrary
                             {
                                 if(GraduatedStudent.ID == StudentID)
                                 {
+                                    bool hasNewApplication = false;
                                     foreach(CourseApplication c in GraduatedStudent.Applications)
                                     {
-                                        if(c.GroupID == gr.ID)
+                                        if(c.GroupID == -1)
                                         {
-                                            if(gr.Level != 3)
+                                            if(c.Language == gr.Language)
                                             {
-                                                c.Level = c.Level + 1;
+                                                hasNewApplication = true;
+                                                break;
                                             }
                                         }
-                                        break;
                                     }
+                                    if(!hasNewApplication)
+                                    {
+                                        foreach (CourseApplication c in GraduatedStudent.Applications)
+                                        {
+                                            if (c.GroupID == gr.ID)
+                                            {
+                                                if (gr.Level != 3)
+                                                {
+                                                    c.Level = c.Level + 1;
+                                                }
+                                            }
+                                            break;
+                                        }
+                                    }                                    
                                 }
                                 break;
                             }
@@ -184,7 +200,7 @@ namespace LanguageSchoolClassLibrary
                     oldApplication.PayedAmount = _rnd.Next(0, 10000);                    
                 }
             }
-            NewApplications = RandomCourseEventsAndGeneration.GenerateApplications(this);
+            
 
             foreach(CourseApplication NewApplication in NewApplications)
             {

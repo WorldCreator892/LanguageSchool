@@ -50,12 +50,15 @@ namespace LanguageSchoolClassLibrary
 
         #region Constructors
         /// <summary>
-        /// Стандартный конструктор для создания экземпляра заявки на обучение
+        /// Пустой конструктор для создания экземпляра заявки на обучение
         /// </summary>
         public CourseApplication()
         {
         }
-    public CourseApplication(string AppliedSurname, string AppliedLanguage, int AppliedIntensity, int AppliedLevel, int AppliedID, int AppliedPayment = 0)
+        /// <summary>
+        /// Стандартный конструктор для создания экземпляра заявки на обучение
+        /// </summary>
+        public CourseApplication(string AppliedSurname, string AppliedLanguage, int AppliedIntensity, int AppliedLevel, int AppliedID, int AppliedPayment = 0)
         {
             Surname = AppliedSurname;
             Language = AppliedLanguage;
@@ -64,13 +67,28 @@ namespace LanguageSchoolClassLibrary
             PayedAmount = AppliedPayment;
             ApplicationID = AppliedID;
         }
-        #endregion
-
-        #region Properties
         /// <summary>
-        /// Фамилия обучающегося
+        /// Конструктор для создания копии экземпляра заявки на обучение
         /// </summary>
-        public string Surname
+        public CourseApplication(CourseApplication CopiedApplication)
+        {
+            Surname = CopiedApplication.Surname;
+            Language = CopiedApplication.Language;
+            Intensity = CopiedApplication.Intensity;
+            Level = CopiedApplication.Level;
+            Status = CopiedApplication.Status;
+            PayedAmount = CopiedApplication.PayedAmount;
+            ApplicationID = CopiedApplication.ApplicationID;
+            WaitingTime = CopiedApplication.WaitingTime;
+            GroupID = CopiedApplication.GroupID;
+        }
+    #endregion
+
+    #region Properties
+    /// <summary>
+    /// Фамилия обучающегося
+    /// </summary>
+    public string Surname
         {
             get { return _surname; }
             set { if (!string.IsNullOrEmpty(value)) { _surname = value; } }

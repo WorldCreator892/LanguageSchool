@@ -88,11 +88,9 @@ C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Menu.g.cs
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Mistake.g.cs
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Result.g.cs
-D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Test.g.cs
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Menu.baml
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Mistake.baml
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Result.baml
-D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Test.baml
 C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe.config
 C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe
 C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.pdb
@@ -189,7 +187,6 @@ C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug
 C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.pdb
 C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.ResolveComReference.cache
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.ResolveComReference.cache
-D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.AssemblyReference.cache
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe.config
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.pdb
@@ -223,3 +220,4 @@ C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolMa
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CopyComplete
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.exe
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.pdb
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.AssemblyReference.cache
