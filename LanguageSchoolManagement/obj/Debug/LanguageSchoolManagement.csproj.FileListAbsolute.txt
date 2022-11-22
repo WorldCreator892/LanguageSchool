@@ -221,3 +221,5 @@ C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolMa
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.exe
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.pdb
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.AssemblyReference.cache
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Info.g.cs
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Info.baml

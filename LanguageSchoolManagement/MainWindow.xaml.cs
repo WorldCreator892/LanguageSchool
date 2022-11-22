@@ -27,7 +27,52 @@ namespace LanguageSchoolManagement
         
         public MainWindow()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            LanguageSchool l = RandomCourseEventsAndGeneration.GenerateLanguageSchool(new List<string>() {
+                "Иван",
+                "Владимир",
+                "Александр",
+                "Светлана",
+                "Екатерина",
+                "Алексей",
+                "Мария",
+                "Михаил",
+                //"Сергей",
+                //"Никита",
+                //"Алена",
+                //"Артем",
+                //"Елена",
+                //"Софья",
+                //"Олег",
+                //"Анастасия",
+                //"Виктория",
+                //"Констатин",
+                //"Карина",
+                //"Кристина",
+                //"Валентина",
+                //"Альбина",
+                //"Нина",
+                //"Милана",
+                //"Варвара",
+                //"Анатолий",
+                "Петр",
+                "Федор",
+                "Ангелина",
+                "Артемий",
+                "Глеб",
+                "Тимофей",
+                "Николай",
+                "Лириса",
+                "Елизавета",
+                "Надежда",
+                "Людмила",
+                "Илья",
+                "Борис",
+                "Юлия"
+                }, new List<string>() { "French", "English" });
+            l.ReformCourses();
+            Info f = new Info(l);
+            f.ShowDialog();
         }
         private void ButtonRulesClick(object sender, RoutedEventArgs e)
         {
