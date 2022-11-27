@@ -199,8 +199,6 @@ C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolMa
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Mistake.g.cs
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\ReqForm.g.cs
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Result.g.cs
-C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Test.g.cs
-C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Time.g.cs
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\VerificationWindow.g.cs
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\App.g.cs
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement_MarkupCompile.cache
@@ -210,9 +208,7 @@ C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolMa
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Mistake.baml
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\ReqForm.baml
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Result.baml
-C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Test.baml
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\VerificationWindow.baml
-C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Time.baml
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.g.resources
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.Properties.Resources.resources
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.GenerateResource.cache
@@ -223,3 +219,7 @@ C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolMa
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.AssemblyReference.cache
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Info.g.cs
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Info.baml
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Info.g.cs
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\SettingsWindow.g.cs
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Info.baml
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\SettingsWindow.baml

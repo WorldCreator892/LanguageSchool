@@ -4,22 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LanguageSchoolManagement"
+        
         mc:Ignorable="d"
-        Title="MainWindow" Height="571" Width="800" MinWidth="800" MinHeight="571" Background="#FFA0C2FF">
-    <Grid Height="571" MinHeight="571">
-        <StackPanel Margin="1,0,0,-46" RenderTransformOrigin="0.5,0.5">
+        Title="MainWindow" Height="521.732" Width="800" MinWidth="800" MinHeight="571" Background="#FFA0C2FF">
+    <Grid MinHeight="571" Margin="-26,0,0,-3">
+        <StackPanel Margin="1,0,10,10" RenderTransformOrigin="0.5,0.5">
             <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman" VerticalAlignment="Center">
                 <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Welcome to our Language School Management Simulator! </Run>
                 <LineBreak />
                 <LineBreak />
                 <Run FontSize="20" FontWeight="Bold" Foreground="Black" > To begin the simulation insert generation parameters using the form below: </Run>
                 <LineBreak />
-            </TextBlock >            
+            </TextBlock >
             <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
                 <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choose Language </Run>
                 <LineBreak />
             </TextBlock >
-            <ComboBox x:Name="ChoiceLanguage"  Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">                
+            <ComboBox x:Name="ChoiceLanguage"  Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">
                 <TextBlock>English</TextBlock>
                 <TextBlock>French</TextBlock>
                 <TextBlock>German</TextBlock>
@@ -57,18 +58,6 @@
                 <TextBlock><Run Text="Individual"/></TextBlock>
                 <TextBlock><Run Text="Group"/></TextBlock>
             </ComboBox>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choose Time </Run>
-                <LineBreak />
-            </TextBlock >
-            <ComboBox x:Name="ChoiceTime" Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">
-                <TextBlock><Run Text="3 months"/></TextBlock>
-                <TextBlock><Run Text="5 months"/></TextBlock>
-                <TextBlock><Run Text="7 months"/></TextBlock>
-                <TextBlock><Run Text="9 months"/></TextBlock>
-                <TextBlock><Run Text="12 months"/></TextBlock>
-                
-            </ComboBox>
             <StackPanel Height="123" Margin="0,0,10,0" RenderTransformOrigin="0.496,0.489" HorizontalAlignment="Center" >
                 <Button Content="See result" Height="30" Click="ButtonClickInfo" RenderTransformOrigin="0.5,0.5" Background="#FF1A3674" HorizontalAlignment="Center" Width="228" Margin="0,20"  >
                     <Button.RenderTransform>
@@ -86,7 +75,11 @@
         <Button Click="ButtonRulesClick" HorizontalAlignment="Left" FontSize="30" Height="60" Width="60">
             <StackPanel>
                 <Image Source="menu.png" />
-                <TextBlock Text="Menu" />
+            </StackPanel>
+        </Button>
+        <Button Click="ButtonSettingsClick" HorizontalAlignment="Left" FontSize="30" Width="59" RenderTransformOrigin="0.933,1.233" Margin="1,188,0,321">
+            <StackPanel RenderTransformOrigin="0.643,-0.036">
+                <Image Source="seticon.jpg" RenderTransformOrigin="0.732,2.327" Height="48" Width="56" />
             </StackPanel>
         </Button>
 

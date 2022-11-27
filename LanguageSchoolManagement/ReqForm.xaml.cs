@@ -49,7 +49,15 @@ namespace LanguageSchoolManagement
                 return valid;
             }
         }
-     
+        private void ProgramClosing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (MessageBox.Show("Do you want close application?", "Question", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            {
+                Close();
+            }
+            else e.Cancel = true;
+        }
+
         private void TextBox_Surname(object sender, TextChangedEventArgs e)
         {
         }

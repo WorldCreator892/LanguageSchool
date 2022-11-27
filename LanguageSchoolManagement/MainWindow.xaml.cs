@@ -2,6 +2,7 @@
 using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -28,6 +29,8 @@ namespace LanguageSchoolManagement
         public MainWindow()
         {
             InitializeComponent();
+            this.Closing += Window_Closing;
+
             LanguageSchool l = RandomCourseEventsAndGeneration.GenerateLanguageSchool(new List<string>() {
                 "Иван",
                 "Владимир",
@@ -74,6 +77,18 @@ namespace LanguageSchoolManagement
             Info f = new Info(l);
             f.ShowDialog();
         }
+        static void Window_Closing(object sender, CancelEventArgs e)
+        {
+
+        if(MessageBox.Show( "Are you sure?", "Exit",
+            MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No) == MessageBoxResult.Yes)
+            {
+               
+            }
+            else e.Cancel = true;
+            
+
+        }
         private void ButtonRulesClick(object sender, RoutedEventArgs e)
         {
             var wds = new Menu();
@@ -102,7 +117,7 @@ namespace LanguageSchoolManagement
         private void ButtonClickAdd(object sender, RoutedEventArgs e)
         {
             if (ChoiceLanguage.SelectedIndex == -1 || ChoiceIntensity.SelectedIndex == -1 ||
-                ChoiceLevel.SelectedIndex == -1 || ChoiceType.SelectedIndex == -1 || ChoiceTime.SelectedIndex == -1)
+                ChoiceLevel.SelectedIndex == -1 || ChoiceType.SelectedIndex == -1 )
             {
                 var wds = new Mistake();
                 wds.Owner = this;
@@ -192,6 +207,10 @@ namespace LanguageSchoolManagement
 
         }
 
-       
+        private void ButtonSettingsClick(object sender, RoutedEventArgs e)
+        {
+            var wds = new SettingsWindow();
+            wds.ShowDialog();
+        }
     }
 }

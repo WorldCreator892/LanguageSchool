@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("mistake.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("seticon.jpg")]
 
 
