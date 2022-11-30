@@ -5,15 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LanguageSchoolManagement"
         mc:Ignorable="d"
-        Title="VerificationWindow" Height="168.103" Width="435.345">
+        Title="VerificationWindow" Height="168.103" Width="435.345" Background="#FFC2E9FF">
     <Grid>
         <Label Margin="139,10,-139,-10">
             Chouse a way to load
         </Label>
-        <Button Content=" Load from text file" Margin="23,44,254,46" Click="СhosenTextLoader">
+        <Button Content=" Load from text file" Margin="23,44,254,46" Click="СhosenTextLoader" Background="#FF2750A8">
             
         </Button>
-        <Button Content=" Make a new student" Margin="238,44,39,46" Click="СhosenMakeNewOne">
+        <Button Content=" Make a new student" Margin="238,44,39,46" Click="СhosenMakeNewOne" Background="#FF2750A8">
 
         </Button>
     </Grid>

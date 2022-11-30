@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -11,6 +14,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Xml.Serialization;
+using LanguageSchoolClassLibrary;
+using Group = LanguageSchoolClassLibrary.Group;
 
 namespace LanguageSchoolManagement
 {
@@ -21,101 +27,134 @@ namespace LanguageSchoolManagement
     {
         List<Group> Groups;//Список всех группп.
         Student student;
-        Application application;
+        CourseApplication application;
         public ReqForm()
         {
             InitializeComponent();
             Groups = new List<Group>();
-            application = new Application("", "", 0, 0, 0);
+            application = new CourseApplication("", "", 0, 0, 0);
         }
+        public bool IsNameValid(string name)
+        {
+            bool valid = false;
+            Regex check = new Regex(@"(^[a-zA-Z]+)$");
+            valid = check.IsMatch(name);
+
+            if (valid == true)
+            {
+                return valid;
+            }
+            else
+            {
+                return valid;
+            }
+        }
+        private void ProgramClosing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (MessageBox.Show("Do you want close application?", "Question", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            {
+                Close();
+            }
+            else e.Cancel = true;
+        }
+
         private void TextBox_Surname(object sender, TextChangedEventArgs e)
         {
-
         }
         private void TextBox_Name(object sender, TextChangedEventArgs e)
         {
-
         }
         private void ButtonClickInfo(object sender, RoutedEventArgs e)
         {
-            //Формируем заявку:
-            application.Surname = TextSurname.Text;//Заполняем фамилию.
-            string Name = TextName.Text;//Просто так для красоты, но возможно где-то потребуется.
-            //Заполняем пунтк интенсивность в заявке:
-            if (ChoiceIntensity.Text == "Intensive")
+            if ((IsNameValid(TextName.Text)) == false || (IsNameValid(TextSurname.Text) == false))
             {
-                application.Intensity = 2;
+                MessageBox.Show("Неправильный формат имени или фамилии!");
             }
-            if (ChoiceIntensity.Text == "Regular")
+            else if (ChoiceLanguage.SelectedIndex == -1 || ChoiceIntensity.SelectedIndex == -1 ||
+               ChoiceLevel.SelectedIndex == -1 || TextSurname.Text == String.Empty || TextName.Text == String.Empty)
             {
-                application.Intensity = 1;
+                var wds = new Mistake();
+                wds.Owner = this;
+                wds.ShowDialog();
             }
-            if (ChoiceIntensity.Text == "Supportive")
+            else
             {
-                application.Intensity = 0;
-            }
-            //Заполняем пунтк уровень в заявке:
-            if (ChoiceLevel.Text == "Advanced")
-            {
-                application.Level = 2;
-            }
-            if (ChoiceLevel.Text == "Intermediate")
-            {
-                application.Level = 1;
-            }
-            if (ChoiceLevel.Text == "Elementary")
-            {
-                application.Level = 0;
-            }
-            //Заполняем пунтк язык в заявке:
-            application.Language = ChoiceLanguage.Text;
-            //MessageBox.Show(application.Surname);
-            //MessageBox.Show(application.Language);
-            //MessageBox.Show(application.Intensity.ToString());
-            //MessageBox.Show(application.Level.ToString());
-            Group grup = new Group(0, application.Language, application.Level, application.Intensity);
-            //Подбираем группу:
-            for (int i = 0; i < Groups.Count; i++)
-            {
-                //Сверяем все параметры:
-                if (Groups[i].Language == application.Language && Groups[i].Level == application.Level && Groups[i].Intensity == application.Intensity)
+                //Формируем заявку:
+                application.Surname = TextSurname.Text;//Заполняем фамилию.
+                string Name = TextName.Text;//Просто так для красоты, но возможно где-то потребуется.
+                                            //Заполняем пунтк интенсивность в заявке:
+                if (ChoiceIntensity.Text == "Intensive")
                 {
-                    if (Groups[i].Amount < 10 && Groups[i].Amount >= 5)//Проверяем численность группы, если меньше 10 чел., то добавляем еще человека.
+                    application.Intensity = 2;
+                }
+                if (ChoiceIntensity.Text == "Regular")
+                {
+                    application.Intensity = 1;
+                }
+                if (ChoiceIntensity.Text == "Supportive")
+                {
+                    application.Intensity = 0;
+                }
+                //Заполняем пунтк уровень в заявке:
+                if (ChoiceLevel.Text == "Advanced")
+                {
+                    application.Level = 2;
+                }
+                if (ChoiceLevel.Text == "Intermediate")
+                {
+                    application.Level = 1;
+                }
+                if (ChoiceLevel.Text == "Elementary")
+                {
+                    application.Level = 0;
+                }
+                //Заполняем пунтк язык в заявке:
+                application.Language = ChoiceLanguage.Text;
+
+                Group grup = new Group(0, application.Language, application.Level, application.Intensity);
+                //Добавление новых людей в файл 
+                List<CourseApplication> StudentList = new List<CourseApplication>();
+                XmlSerializer formatter = new XmlSerializer(typeof(List<CourseApplication>));
+                using (FileStream fs = new FileStream("Students.xml", FileMode.OpenOrCreate))
+                {
+                    List<CourseApplication> deserilizeAn = (List<CourseApplication>)formatter.Deserialize(fs);
+                    if (deserilizeAn != null)
                     {
-                        Groups[i].Amount++;
-                    }
-                    if (Groups[i].Amount < 5)//Проверяем численность группы, если меньше 5 чел., то добавляем еще человека, но не активируем ее.
-                    {
-                        Groups[i].Amount++;
-                    }
-                    else //если больше 10, то выполняем это:
-                    {
-                        for (int j = i + 1; j < Groups.Count; j++)//Ищем в оставшемся списке группы подходящие.
+                        foreach (CourseApplication app in deserilizeAn)
                         {
-                            if (Groups[j].Language == application.Language && Groups[j].Level == application.Level && Groups[j].Intensity == application.Intensity)
-                            {
-                                if (Groups[j].Amount < 10 && Groups[j].Amount >= 5)//Проверяем численность группы, если меньше 10 чел., то добавляем еще человека.
-                                {
-                                    Groups[j].Amount++;
-                                }
-                                if (Groups[j].Amount < 5)//Проверяем численность группы, если меньше 5 чел., то добавляем еще человека, но не активируем ее.
-                                {
-                                    Groups[j].Amount++;
-                                }
-                            }
-                            else
-                            {
-                                //Убираем из группы в 10 человек 3 людей, получим группу из 4, но это слишком мало, по этому,
-                                //группу мы создадим из 4 человек, но запускать ее не будем пока не найдем 5-ого человека.
-                                grup.Amount = 3;//В новую группу добавляем 3 людей из старой.
-                                Groups[i].Amount = Groups[i].Amount - 3;//Вычитаем из переполненной группы 3 людей.
-                                Groups.Add(grup);//Добавляем новую группу.
-                            }
+                            StudentList.Add(app);
                         }
                     }
-
                 }
+                StudentList.Add(application);
+                XmlSerializer xmlFormat = new XmlSerializer(typeof(List<CourseApplication>));
+                using (Stream fStream = new FileStream("Students.xml",
+                  FileMode.Create, FileAccess.Write, FileShare.None))
+                {
+                    xmlFormat.Serialize(fStream, StudentList);
+                }
+                var wds = new Result();
+                wds.Owner = this;
+                wds.ShowDialog();
+                wds.Close();
+                Close();
+
             }
+        }
+        private void ChoiceLevel_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+        private void ButtonClickReturnInfo(object sender, RoutedEventArgs e)
+        {
+            Close();
+            var wds = new MainWindow();
+            wds.ShowDialog();
+        }
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            this.Owner.Owner.Show();
+            
         }
     }
 }

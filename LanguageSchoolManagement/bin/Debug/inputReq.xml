@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfCourseApplication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CourseApplication>
+    <Surname>Basalaeva</Surname>
+    <Language>English</Language>
+    <Intensity>0</Intensity>
+    <Level>1</Level>
+    <PayedAmount>1</PayedAmount>
+    <Status>0</Status>
+  </CourseApplication>
+  <CourseApplication>
+    <Surname>Mironova</Surname>
+    <Language>English</Language>
+    <Intensity>2</Intensity>
+    <Level>2</Level>
+    <PayedAmount>2</PayedAmount>
+    <Status>0</Status>
+  </CourseApplication>
+  <CourseApplication>
+    <Surname>Korolev</Surname>
+    <Language>French</Language>
+    <Intensity>1</Intensity>
+    <Level>0</Level>
+    <PayedAmount>1</PayedAmount>
+    <Status>0</Status>
+  </CourseApplication>
+</ArrayOfCourseApplication>

@@ -34,3 +34,194 @@ C:\Users\79622\Desktop\LanguageSchool-main\LanguageSchool-master\LanguageSchoolM
 C:\Users\79622\Desktop\LanguageSchool-main\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.pdb
 C:\Users\79622\Desktop\LanguageSchool-main\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\VerificationWindow.g.cs
 C:\Users\79622\Desktop\LanguageSchool-main\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\VerificationWindow.baml
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe.config
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.pdb
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\MainWindow.g.cs
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\ReqForm.g.cs
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\VerificationWindow.g.cs
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\App.g.cs
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement_MarkupCompile.cache
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement_MarkupCompile.lref
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\MainWindow.baml
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\ReqForm.baml
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\VerificationWindow.baml
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.g.resources
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.Properties.Resources.resources
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.GenerateResource.cache
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CoreCompileInputs.cache
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.exe
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.pdb
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\bin\Debug\LanguageSchoolClassLibrary.dll
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\bin\Debug\LanguageSchoolClassLibrary.pdb
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CopyComplete
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe.config
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.pdb
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\bin\Debug\LanguageSchoolClassLibrary.dll
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\bin\Debug\LanguageSchoolClassLibrary.pdb
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\MainWindow.g.cs
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\Menu.g.cs
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\ReqForm.g.cs
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\VerificationWindow.g.cs
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\App.g.cs
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement_MarkupCompile.cache
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement_MarkupCompile.lref
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\MainWindow.baml
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\ReqForm.baml
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\VerificationWindow.baml
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\Menu.baml
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.g.resources
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.Properties.Resources.resources
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CopyComplete
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.exe
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.pdb
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\Result.g.cs
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\Result.baml
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\Adding.g.cs
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\Adding.baml
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\Mistake.g.cs
+C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\Mistake.baml
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Menu.g.cs
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Mistake.g.cs
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Result.g.cs
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Menu.baml
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Mistake.baml
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Result.baml
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe.config
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.pdb
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolClassLibrary.dll
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolClassLibrary.pdb
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csprojAssemblyReference.cache
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Adding.g.cs
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\MainWindow.g.cs
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Menu.g.cs
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Mistake.g.cs
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\ReqForm.g.cs
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Result.g.cs
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Test.g.cs
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\VerificationWindow.g.cs
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\App.g.cs
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement_MarkupCompile.cache
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement_MarkupCompile.lref
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Adding.baml
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\MainWindow.baml
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Menu.baml
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Mistake.baml
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\ReqForm.baml
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Result.baml
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Test.baml
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\VerificationWindow.baml
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.g.resources
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.Properties.Resources.resources
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.GenerateResource.cache
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CoreCompileInputs.cache
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CopyComplete
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.exe
+C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.pdb
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe.config
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.pdb
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolClassLibrary.dll
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolClassLibrary.pdb
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.AssemblyReference.cache
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Adding.g.cs
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\MainWindow.g.cs
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Menu.g.cs
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Mistake.g.cs
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\ReqForm.g.cs
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Result.g.cs
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Test.g.cs
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\VerificationWindow.g.cs
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\App.g.cs
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement_MarkupCompile.cache
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement_MarkupCompile.lref
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Adding.baml
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\MainWindow.baml
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Menu.baml
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Mistake.baml
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\ReqForm.baml
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Result.baml
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Test.baml
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\VerificationWindow.baml
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.g.resources
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.Properties.Resources.resources
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.GenerateResource.cache
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CopyComplete
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.exe
+C:\Users\admin\Documents\Учеба\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.pdb
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe.config
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.pdb
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolClassLibrary.dll
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolClassLibrary.pdb
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\MainWindow.g.cs
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Menu.g.cs
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Mistake.g.cs
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\ReqForm.g.cs
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Result.g.cs
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\VerificationWindow.g.cs
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\App.g.cs
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement_MarkupCompile.cache
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement_MarkupCompile.lref
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\MainWindow.baml
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Menu.baml
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Mistake.baml
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\ReqForm.baml
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Result.baml
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\VerificationWindow.baml
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.g.resources
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.Properties.Resources.resources
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CopyComplete
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.exe
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.pdb
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.ResolveComReference.cache
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.ResolveComReference.cache
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe.config
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.pdb
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\bin\Debug\LanguageSchoolClassLibrary.dll
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\bin\Debug\LanguageSchoolClassLibrary.pdb
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csprojAssemblyReference.cache
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.ResolveComReference.cache
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\MainWindow.g.cs
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Menu.g.cs
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Mistake.g.cs
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\ReqForm.g.cs
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Result.g.cs
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\VerificationWindow.g.cs
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\App.g.cs
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement_MarkupCompile.cache
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement_MarkupCompile.lref
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\MainWindow.baml
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Menu.baml
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Mistake.baml
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\ReqForm.baml
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Result.baml
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\VerificationWindow.baml
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.g.resources
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.Properties.Resources.resources
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.GenerateResource.cache
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CoreCompileInputs.cache
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CopyComplete
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.exe
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.pdb
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.AssemblyReference.cache
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Info.g.cs
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Info.baml
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Info.g.cs
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\SettingsWindow.g.cs
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Info.baml
+C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\SettingsWindow.baml
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Info.g.cs
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\SettingsWindow.g.cs
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\Info.baml
+C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\obj\Debug\SettingsWindow.baml
