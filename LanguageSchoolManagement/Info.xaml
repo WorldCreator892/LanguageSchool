@@ -21,8 +21,8 @@
             </Grid>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Content="Вернуться в начало" Margin="0,0,10,0"/>
-                <Button Content="Выгрузить результаты в таблицу" Margin="10,0,0,0"/>
+                <Button Click="ButtonClickReturn" Content="Вернуться в начало" Margin="0,0,10,0"/>
+                <Button Click="ButtonClickSaveToExcel" Content="Выгрузить результаты в таблицу" Margin="10,0,0,0"/>
             </StackPanel>
 
         </StackPanel>

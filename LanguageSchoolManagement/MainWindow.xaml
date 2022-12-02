@@ -16,50 +16,8 @@
                 <Run FontSize="20" FontWeight="Bold" Foreground="Black" > To begin the simulation insert generation parameters using the form below: </Run>
                 <LineBreak />
             </TextBlock >
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choose Language </Run>
-                <LineBreak />
-            </TextBlock >
-            <ComboBox x:Name="ChoiceLanguage"  Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">
-                <TextBlock>English</TextBlock>
-                <TextBlock>French</TextBlock>
-                <TextBlock>German</TextBlock>
-                <TextBlock>Chinese</TextBlock>
-            </ComboBox>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choose Level </Run>
-                <LineBreak />
-            </TextBlock >
-            <ComboBox x:Name="ChoiceLevel" Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">
-                <TextBlock>Advanced</TextBlock>
-                <TextBlock>Intermediate</TextBlock>
-                <TextBlock>Elementary</TextBlock>
-            </ComboBox>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choose Intensity </Run>
-                <LineBreak />
-            </TextBlock >
-            <ComboBox x:Name="ChoiceIntensity" Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">
-                <TextBlock>Intensive</TextBlock>
-                <TextBlock>Regular</TextBlock>
-                <TextBlock>Supportive</TextBlock>
-            </ComboBox>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Choose Type </Run>
-                <LineBreak />
-            </TextBlock >
-            <ComboBox x:Name="ChoiceType" Height="30" Width="400"  VerticalAlignment="Top" HorizontalAlignment="Center">
-                <ComboBox.Background>
-                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                        <GradientStop Color="#FF783737" Offset="1"/>
-                    </LinearGradientBrush>
-                </ComboBox.Background>
-                <TextBlock><Run Text="Individual"/></TextBlock>
-                <TextBlock><Run Text="Group"/></TextBlock>
-            </ComboBox>
             <StackPanel Height="123" Margin="0,0,10,0" RenderTransformOrigin="0.496,0.489" HorizontalAlignment="Center" >
-                <Button Content="See result" Height="30" Click="ButtonClickInfo" RenderTransformOrigin="0.5,0.5" Background="#FF1A3674" HorizontalAlignment="Center" Width="228" Margin="0,20"  >
+                <Button Content="Generate" Height="30" Click="ButtonClickGenerate" RenderTransformOrigin="0.5,0.5" Background="#FF1A3674" HorizontalAlignment="Center" Width="228" Margin="0,20"  >
                     <Button.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -69,7 +27,6 @@
                         </TransformGroup>
                     </Button.RenderTransform>
                 </Button>
-                <Button Content="Add new person" Height="30" Click="ButtonClickAdd" HorizontalAlignment="Center" Width="228" RenderTransformOrigin="0.496,-3.721" Background="#FF1A3674"   />
             </StackPanel>
         </StackPanel>
         <Button Click="ButtonRulesClick" HorizontalAlignment="Left" FontSize="30" Height="60" Width="60">

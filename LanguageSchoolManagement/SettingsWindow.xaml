@@ -13,7 +13,11 @@
                 
                 <LineBreak />
             </TextBlock >
+            
         </StackPanel>
+        
+        <Slider Value="1" Minimum="1" Maximum="50" SelectionStart="0" Height="40" />
+        
         
         <StackPanel RenderTransformOrigin="0.508,0.648" Margin="0,196,0,10">
           

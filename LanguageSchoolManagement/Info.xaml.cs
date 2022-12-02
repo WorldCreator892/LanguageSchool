@@ -18,12 +18,14 @@ namespace LanguageSchoolManagement
     /// <summary>
     /// Логика взаимодействия для Info.xaml
     /// </summary>
-    public partial class Info : Window
+    public partial class Info : System.Windows.Window
     {
         private int InfoFieldCount = 0;
+        private LanguageSchool languageSchool;
         public Info(LanguageSchool l)
         {
             InitializeComponent();
+            languageSchool = l;
             int CurrentRow = 0;
             InfoGrid.ColumnDefinitions.Add(new ColumnDefinition());
             InfoGrid.RowDefinitions.Add(new RowDefinition());
@@ -165,9 +167,30 @@ namespace LanguageSchoolManagement
                 }
             }
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonClickReturn(object sender, RoutedEventArgs e)
         {
+            this.Close();
+        }
+        private void ButtonClickSaveToExcel(object sender, RoutedEventArgs e)
+        {
+            string file1 = "C:\\Users\\admin\\Desktop\\LanguageSchool-newMain\\LanguageSchool.xlsx";
+            //Если список языковых школ:
+            //List<LanguageSchool> languageSchools = new List<LanguageSchool>();
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    languageSchool = RandomCourseEventsAndGeneration.GenerateLanguageSchool(PossibleSurnames, PossibleLanguages);
+            //    languageSchool.ReformCourses();
+            //    languageSchools.Add(languageSchool);
+            //}
+            //WorkWithExcel.WriteListLanguageSchoolToExcel(languageSchools, file1);
+            try
+            {
+                WorkWithExcel.WriteLanguageSchoolToExcel(languageSchool, file1);
+            }
+            catch (System.Runtime.InteropServices.COMException)
+            {
+                MessageBox.Show("Ошибка при сохранении документа. Текущая версия файла может быть сохранена в уже созданный файл при закрытии таблицы.");
+            }
 
         }
     }
