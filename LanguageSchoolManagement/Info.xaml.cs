@@ -106,6 +106,10 @@ namespace LanguageSchoolManagement
                     GroupInfo.Text += Environment.NewLine + " Интенсивность обучения - " + l.Courses[i].Groups[j].Intensity;
                     GroupInfo.Text += Environment.NewLine + " Число оставшихся занятий - " + l.Courses[i].Groups[j].RemainingLessons;
                     GroupInfo.Text += Environment.NewLine + " Список обучающихся (по идентификационным номерам): ";
+                    if (l.Courses[i].Groups[j].StudentIDs.Count == 1)
+                    {
+                        GroupInfo.Background = Brushes.Red;
+                    }
                     foreach (int ID in l.Courses[i].Groups[j].StudentIDs)
                     {
                         GroupInfo.Text += Environment.NewLine + ID;
