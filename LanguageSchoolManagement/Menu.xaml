@@ -9,8 +9,8 @@
         Title="Menu" Height="450" Width="800">
     <Grid Background="#FFA0C2FF">
         <StackPanel Background="#FFA0C2FF" Margin="20,0,21.6,0">
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Normal" FontFamily="Rockwell Extra Bold" OpacityMask="#FFF1F1E1">
-                <Run FontSize="20" FontWeight="Black" Foreground="Black" Background="Black" >Памятка:</Run>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Normal" FontFamily="Rockwell Extra Bold" OpacityMask="#FFF1F1E1" Background="#FFA0C2FF">
+                <Run FontSize="20" FontWeight="Black" >Памятка:</Run>
                 <LineBreak />
             </TextBlock>
             <TextBlock TextWrapping="Wrap" TextAlignment="Left" FontStyle="Normal" FontFamily="Rockwell Extra Bold" Height="311" >
