@@ -178,7 +178,7 @@ namespace LanguageSchoolManagement
         }
         private void ButtonClickSaveToExcel(object sender, RoutedEventArgs e)
         {
-            string file1 = "C:\\Users\\admin\\Desktop\\LanguageSchool-newMain\\LanguageSchool.xlsx";
+            string file1 = "C:\\Users\\admin\\Desktop\\LanguageSchool-main\\LanguageSchool.xlsx";
             //Если список языковых школ:
             //List<LanguageSchool> languageSchools = new List<LanguageSchool>();
             //for (int i = 0; i < 5; i++)
@@ -195,6 +195,19 @@ namespace LanguageSchoolManagement
             catch (System.Runtime.InteropServices.COMException)
             {
                 MessageBox.Show("Ошибка при сохранении документа. Текущая версия файла может быть сохранена в уже созданный файл при закрытии таблицы.");
+            }
+            catch (System.NullReferenceException)
+            {
+                MessageBox.Show("Отсутствует файл для отображения данных. Либо произошла ошибка во время записи.");
+            }
+            catch (System.IO.DirectoryNotFoundException)
+            {
+                MessageBox.Show("Не удается открыть или создать файл.");
+            }
+            catch(Exception ex)
+            {
+                var wds = new Mistake();
+                wds.ShowDialog();
             }
 
         }
