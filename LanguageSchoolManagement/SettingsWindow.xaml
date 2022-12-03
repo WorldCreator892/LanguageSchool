@@ -4,26 +4,58 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LanguageSchoolManagement"
+         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="SettingsWindow" Height="330.738" Width="501.23">
-    <Grid Margin="0,0,2,2">
-        <StackPanel Background="#FFC2E9FF">
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman" Foreground="#FF133A72">
+        Title="SettingsWindow" Height="364.738" Width="546.23" MinHeight="364.738" MinWidth="546.23" MaxHeight="364.738" MaxWidth="546.23" >
+    <Grid Margin="0,0,2,1">
+        <StackPanel Background="#FFC2E9FF" Margin="0,0,-2,0" RenderTransformOrigin="0.5,0.5">
+            <StackPanel.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.101"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.498"/>
+                </TransformGroup>
+            </StackPanel.RenderTransform>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Rockwell Extra Bold" Foreground="#FF133A72">
                 <Run FontSize="20" FontWeight="Bold" > Choice  likely interval for generating (your changes will save for the next time) </Run>
                 
                 <LineBreak />
             </TextBlock >
-            
+
         </StackPanel>
 
-        <Slider Value="3" Minimum="3" Maximum="12" SelectionStart="0" Height="30" IsSelectionRangeEnabled="True" ValueChanged="Slider_ValueChanged"
-                TickPlacement="TopLeft" Margin="45,135,45.2,133.8" Background="#FF2750A8" IsSnapToTickEnabled="True" TickFrequency="1"
+        <Label  Foreground="#FF162D6C" FontFamily="Rockwell Extra Bold" Margin="42,83,378,193" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-43.18"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+            3 month
+        </Label>
+        <Label  Foreground="#FF162D6C" FontFamily="Rockwell Extra Bold" Margin="465,78,-52,198" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-51.137"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+            12 month
+        </Label>
+        <StackPanel Margin="0,10,0,107" >
+            <Slider Value="3" Minimum="3" Maximum="12" SelectionStart="0" Height="30" IsSelectionRangeEnabled="True" ValueChanged="Slider_ValueChanged"
+                TickPlacement="TopLeft" Margin="45,135,45.2,133.8" Background="#FF1A3570" IsSnapToTickEnabled="True" TickFrequency="1"
                 Ticks="3, 4, 5, 6, 7, 8, 9, 10, 11, 12"/>
-
+        </StackPanel>
 
         <StackPanel RenderTransformOrigin="0.508,0.648" Margin="0,196,0,10">
-            <Button Content="Save" Height="30" Width="50" Click="ButtonClickSave" Margin="10" Background="#FF2750A8"/>
-           </StackPanel>
-       
+            <Button Content="Save" Height="30" Width="50" Click="ButtonClickSave" Margin="10" Background="#FF1A3570" FontFamily="Rockwell Extra Bold" Foreground="#FFFFF3F3"/>
+        </StackPanel>
+
     </Grid>
 </Window>

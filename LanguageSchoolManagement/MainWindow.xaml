@@ -4,41 +4,94 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LanguageSchoolManagement"
-        
+        WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="521.732" Width="800" MinWidth="800" MinHeight="571" Background="#FFA0C2FF">
-    <Grid MinHeight="571" Margin="-26,0,0,-3">
-        <StackPanel Margin="1,0,10,10" RenderTransformOrigin="0.5,0.5">
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Times New Roman" VerticalAlignment="Center">
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > Welcome to our Language School Management Simulator! </Run>
-                <LineBreak />
-                <LineBreak />
-                <Run FontSize="20" FontWeight="Bold" Foreground="Black" > To begin the simulation insert generation parameters using the form below: </Run>
-                <LineBreak />
-            </TextBlock >
-            <StackPanel Height="123" Margin="0,0,10,0" RenderTransformOrigin="0.496,0.489" HorizontalAlignment="Center" >
-                <Button Content="Generate" Height="30" Click="ButtonClickGenerate" RenderTransformOrigin="0.5,0.5" Background="#FF1A3674" HorizontalAlignment="Center" Width="228" Margin="0,20"  >
-                    <Button.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform/>
-                            <SkewTransform/>
-                            <RotateTransform Angle="0.275"/>
-                            <TranslateTransform/>
-                        </TransformGroup>
-                    </Button.RenderTransform>
-                </Button>
-            </StackPanel>
+        Title="MainWindow" Height="521.732" Width="800" MinWidth="888" MinHeight="571" Background="#FFA0C2FF">
+
+    <Grid MinHeight="500" Margin="0,0,-8,-21">
+
+        <StackPanel>
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Rockwell Extra Bold" VerticalAlignment="Center" Margin="5,12,0,441" Height="108" RenderTransformOrigin="0.499,0.376" FontSize="18" Foreground="#FF162D6C">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.057"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform><Run FontWeight="Bold" Text="Welcome to our Language School Management Simulator!" /><LineBreak /><LineBreak /><Run FontWeight="Bold" Text="To begin the simulation insert generation parameters using the form below:" /><LineBreak /></TextBlock>
         </StackPanel>
-        <Button Click="ButtonRulesClick" HorizontalAlignment="Left" FontSize="30" Height="60" Width="60">
-            <StackPanel>
-                <Image Source="menu.png" />
-            </StackPanel>
-        </Button>
-        <Button Click="ButtonSettingsClick" HorizontalAlignment="Left" FontSize="30" Width="59" RenderTransformOrigin="0.933,1.233" Margin="1,188,0,321">
-            <StackPanel RenderTransformOrigin="0.643,-0.036">
-                <Image Source="seticon.jpg" RenderTransformOrigin="0.732,2.327" Height="48" Width="56" />
-            </StackPanel>
-        </Button>
+
+        <StackPanel>
+            <Button Content="Generate" Click="ButtonClickGenerate" RenderTransformOrigin="0.518,1.442" Background="#FF1A3570" Width="267" Margin="256,321,277,143" Height="115" FontFamily="Rockwell Extra Bold" FontSize="16" Foreground="#FFD2E2EA">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+
+        <StackPanel>
+            <Button Click="ButtonRulesClick" FontSize="30" Width="111" RenderTransformOrigin="0.569,1.029" Margin="86,120,0,329" Height="111" HorizontalAlignment="Left">
+
+                <Button.Background>
+                    <ImageBrush ImageSource="menu.png"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="180"/>
+                    </Style>
+                </Button.Resources>
+
+            </Button>
+
+        </StackPanel>
+        <Label Margin="100,236,0,282" Foreground="#FF162D6C" FontFamily="Rockwell Extra Bold" HorizontalAlignment="Left" Width="94" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.494"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.491"/>
+                </TransformGroup>
+            </Label.RenderTransform> Instruction
+        </Label>
+        <Label Margin="656,244,66,272" Foreground="#FF162D6C" FontFamily="Rockwell Extra Bold" Width="77" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.494"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.491"/>
+                </TransformGroup>
+            </Label.RenderTransform> Settings
+        </Label>
+
+        <StackPanel>
+            <Button Click="ButtonSettingsClick" FontSize="30" Width="118" RenderTransformOrigin="0.933,1.233" Margin="583,120,0,330" Height="111">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="180"/>
+                    </Style>
+                </Button.Resources>
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="0.651"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="0.912"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Background>
+                    <ImageBrush ImageSource="seticon.jpg"/>
+                </Button.Background>
+
+
+
+            </Button>
+        </StackPanel>
+
 
     </Grid>
 </Window>

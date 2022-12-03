@@ -51,6 +51,8 @@ namespace LanguageSchoolManagement
             Courseb.Name = "CourseBtn";
             Courseb.Tag = false;
             Courseb.Content = "Курсы (раскрыть содержимое)";
+            Courseb.Background = Brushes.DarkBlue;
+            Courseb.Foreground = Brushes.White;
             Courseb.Margin = new Thickness(20, 0, 0, 0);
             Courseb.HorizontalAlignment = HorizontalAlignment.Left;
             Grid.SetColumn(Courseb, 0);
@@ -67,6 +69,7 @@ namespace LanguageSchoolManagement
                 CourseInfo.TextWrapping = TextWrapping.Wrap;
                 CourseInfo.Visibility = Visibility.Collapsed;
                 CourseInfo.Margin = CourseInfoMargin;
+
                 Grid.SetColumn(CourseInfo, 0);
                 Grid.SetRow(CourseInfo, CurrentRow);
                 CourseInfo.Text = "Информация о курсе: ";
@@ -83,6 +86,8 @@ namespace LanguageSchoolManagement
                 Groupb.Visibility = Visibility.Collapsed;
                 Groupb.Tag = false;
                 Groupb.Content = "Группы (раскрыть содержимое)";
+                Groupb.Background = Brushes.DarkBlue;
+                Groupb.Foreground = Brushes.White;
                 Groupb.Margin = CourseInfoMargin;
                 Groupb.HorizontalAlignment = HorizontalAlignment.Left;
                 Grid.SetColumn(Groupb, 0);
@@ -110,7 +115,7 @@ namespace LanguageSchoolManagement
                     GroupInfo.Text += Environment.NewLine + " Список обучающихся (по идентификационным номерам): ";
                     if (l.Courses[i].Groups[j].StudentIDs.Count == 1)
                     {
-                        GroupInfo.Background = Brushes.Red;
+                        GroupInfo.Background = Brushes.LightPink;
                     }
                     foreach (int ID in l.Courses[i].Groups[j].StudentIDs)
                     {

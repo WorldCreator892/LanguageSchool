@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:LanguageSchoolManagement"
         mc:Ignorable="d"
         Title="Info" Height="450" Width="800">
-    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Background="#FFA0C2FF">
         <StackPanel Orientation="Vertical" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
-            <Label Content="Информация о языковой школе: "/>
+            <Label Content="Информация о языковой школе: " FontFamily="Rockwell Extra Bold" FontSize="16"/>
 
-            <Grid Name="InfoGrid" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True">
+            <Grid Name="InfoGrid" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" Background="#FFA0C2FF">
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
@@ -20,9 +20,9 @@
 
             </Grid>
 
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Click="ButtonClickReturn" Content="Вернуться в начало" Margin="0,0,10,0"/>
-                <Button Click="ButtonClickSaveToExcel" Content="Выгрузить результаты в таблицу" Margin="10,0,0,0"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Background="#FFA0C2FF">
+                <Button Click="ButtonClickReturn" Content="Вернуться в начало" Margin="0,0,10,0" Background="#FF1D2E68" Height="33" Width="134" FontFamily="Rockwell Extra Bold" Foreground="#FFD2D9E4"/>
+                <Button Click="ButtonClickSaveToExcel" Content="Выгрузить результаты в таблицу" Margin="10,0,0,0" Background="#FF1D2E68" Width="223" FontFamily="Rockwell Extra Bold" Foreground="#FFD2D9E4"/>
             </StackPanel>
 
         </StackPanel>
