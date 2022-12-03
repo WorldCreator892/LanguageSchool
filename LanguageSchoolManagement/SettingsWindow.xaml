@@ -15,15 +15,15 @@
             </TextBlock >
             
         </StackPanel>
-        
-        <Slider Value="1" Minimum="1" Maximum="50" SelectionStart="0" Height="40" />
-        
-        
+
+        <Slider Value="3" Minimum="3" Maximum="12" SelectionStart="0" Height="30" IsSelectionRangeEnabled="True" ValueChanged="Slider_ValueChanged"
+                TickPlacement="TopLeft" Margin="45,135,45.2,133.8" Background="#FF2750A8" IsSnapToTickEnabled="True" TickFrequency="1"
+                Ticks="3, 4, 5, 6, 7, 8, 9, 10, 11, 12"/>
+
+
         <StackPanel RenderTransformOrigin="0.508,0.648" Margin="0,196,0,10">
-          
-            <Button Content="Ok" Height="30" Width="50" Click="ButtonClickInfo" Margin="10" Background="#FF2750A8"/>
-            <Button Content="Return to the Main Window" Height="30" Width="200" Click="ButtonClickReturnInfo" Margin="10" Background="#FF2750A8"/>
-        </StackPanel>
+            <Button Content="Save" Height="30" Width="50" Click="ButtonClickSave" Margin="10" Background="#FF2750A8"/>
+           </StackPanel>
        
     </Grid>
 </Window>

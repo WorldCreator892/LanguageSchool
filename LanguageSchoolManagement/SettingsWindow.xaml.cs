@@ -19,23 +19,20 @@ namespace LanguageSchoolManagement
     /// </summary>
     public partial class SettingsWindow : Window
     {
+        public int SliderValue;
         public SettingsWindow()
         {
             InitializeComponent();
         }
 
-        private void ButtonClickInfo(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void ButtonClickReturnInfo(object sender, RoutedEventArgs e)
+        private void ButtonClickSave(object sender, RoutedEventArgs e)
         {
 
         }
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             ((Slider)sender).SelectionEnd = e.NewValue;
+
         }
     }
 }
