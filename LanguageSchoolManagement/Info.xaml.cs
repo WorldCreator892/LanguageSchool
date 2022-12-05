@@ -60,9 +60,15 @@ namespace LanguageSchoolManagement
                 PressedButton.Tag = false;
                 for (int i = InfoGrid.Children.IndexOf(PressedButton) + 1; i < InfoGrid.Children.Count; i++)
                 {
-                    if ((InfoGrid.Children[i] as FrameworkElement).Margin.Left == (InfoGrid.Children[InfoGrid.Children.IndexOf(PressedButton)] as FrameworkElement).Margin.Left + 20)
+                    if ((InfoGrid.Children[i] as FrameworkElement).Margin.Left >= (InfoGrid.Children[InfoGrid.Children.IndexOf(PressedButton)] as FrameworkElement).Margin.Left + 20)
                     {
                         (InfoGrid.Children[i] as FrameworkElement).Visibility = Visibility.Collapsed;
+                        if((InfoGrid.Children[i] as FrameworkElement).Tag != null)
+                        {
+                            (InfoGrid.Children[i] as FrameworkElement).Tag = false;
+                            var t = (InfoGrid.Children[i] as ContentControl);
+                            t.Content = t.Content.ToString().Remove(t.Content.ToString().Length - 22) + " (раскрыть содержимое)";
+                        }
                     }
                     else
                     {

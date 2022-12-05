@@ -74,8 +74,11 @@ namespace LanguageSchoolManagement
                 "Юлия"
                 }, new List<string>() { "French", "English" });
             l.ReformCourses();
-           // Info f = new Info(l);
+            // Info f = new Info(l);
             //f.ShowDialog();
+            var wds = new SettingsWindow();
+            GenerationLength = wds.SliderValue;
+            wds.Close();
         }
         static void Window_Closing(object sender, CancelEventArgs e)
         {
@@ -85,8 +88,8 @@ namespace LanguageSchoolManagement
             {
                
             }
-            else e.Cancel = true;
-            
+            else e.Cancel = true;          
+
 
         }
         private void ButtonRulesClick(object sender, RoutedEventArgs e)

@@ -26,6 +26,7 @@ namespace LanguageSchoolManagement
         {
             InitializeComponent();
             SimulationSlider.Value = Properties.Settings.Default.SimulationSlider;
+            SliderValue = (int)SimulationSlider.Value;
         }
 
         private void ButtonClickSave(object sender, RoutedEventArgs e)
@@ -41,8 +42,7 @@ namespace LanguageSchoolManagement
             {
                 (this.Owner as MainWindow).GenerationLength = (int)e.NewValue;
                 Properties.Settings.Default.SimulationSlider =(int)e.NewValue;
-                Properties.Settings.Default.Save();
-                int a = 0;
+                Properties.Settings.Default.Save();                
             }       
             
         }
