@@ -71,17 +71,8 @@
     <Compile Include="Mistake.xaml.cs">
       <DependentUpon>Mistake.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ReqForm.xaml.cs">
-      <DependentUpon>ReqForm.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Result.xaml.cs">
-      <DependentUpon>Result.xaml</DependentUpon>
-    </Compile>
     <Compile Include="SettingsWindow.xaml.cs">
       <DependentUpon>SettingsWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="VerificationWindow.xaml.cs">
-      <DependentUpon>VerificationWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="Info.xaml">
       <SubType>Designer</SubType>
@@ -107,19 +98,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ReqForm.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Result.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="SettingsWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="VerificationWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
