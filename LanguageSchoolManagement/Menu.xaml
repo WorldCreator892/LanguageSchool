@@ -10,7 +10,7 @@
     <Grid Background="#FFA0C2FF">
         <StackPanel Background="#FFA0C2FF" Margin="20,0,21.6,0">
             <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Normal" FontFamily="Rockwell Extra Bold" OpacityMask="#FFF1F1E1">
-                <Run FontSize="20" FontWeight="Black" Foreground="Black" Background="Black" >Памятка:</Run>
+                <Run FontSize="20" FontWeight="Black" Foreground="Black" Background="#FFA0C2FF">Памятка:</Run>
                 <LineBreak />
             </TextBlock>
             <TextBlock TextWrapping="Wrap" TextAlignment="Left" FontStyle="Normal" FontFamily="Rockwell Extra Bold" Height="311" >
@@ -26,7 +26,7 @@
                 <Run FontSize="15" FontWeight="Black" Foreground="Black"> 3)	Занятия могут быть индивидуальные и групповые </Run>
                 <LineBreak />
                 <LineBreak />
-                <Run FontSize="15" FontWeight="Black" Foreground="Black"> Чтобы корректно смоделировать данный процесс, необходимо заполнить все требуемые поля в выбранных формах и вводить корректные данные. В большинство полей необходимо выбрать правильный (подходящий) вариант, за исключением «Имя» и «Фамилия», их заполняют вручную, используя буквы русского или английского алфавита. </Run>
+                <Run FontSize="15" FontWeight="Black" Foreground="Black"> Чтобы корректно смоделировать данный процесс, убедитесь в том, что задали в окне настроек нужную вам продолжительность моделирования! </Run>
                 <LineBreak />
             </TextBlock >
             <Button Content="Ok" Click="ButtonOkClick" HorizontalAlignment="Center" FontSize="24" Height="46" Width="108" Margin="297,0,345,0" FontFamily="Rockwell Extra Bold" Background="#FF162D6C" Foreground="#FFDCE4F3"/>

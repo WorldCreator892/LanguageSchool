@@ -25,7 +25,7 @@ namespace LanguageSchoolManagement
     /// </summary>
     public partial class MainWindow : System.Windows.Window
     {
-        
+        public int GenerationLength = 3;
         public MainWindow()
         {
             InitializeComponent();
@@ -104,13 +104,14 @@ namespace LanguageSchoolManagement
             //Если 1 языковая школа:
             LanguageSchool languageSchool = RandomCourseEventsAndGeneration.GenerateLanguageSchool(PossibleSurnames, PossibleLanguages);
             languageSchool.ReformCourses();
-            var wds = new Info(languageSchool);
+            var wds = new Info(languageSchool, GenerationLength);
             wds.Owner = this;
             wds.ShowDialog();
         }
         private void ButtonSettingsClick(object sender, RoutedEventArgs e)
         {
             var wds = new SettingsWindow();
+            wds.Owner = this;
             wds.ShowDialog();
         }
     }

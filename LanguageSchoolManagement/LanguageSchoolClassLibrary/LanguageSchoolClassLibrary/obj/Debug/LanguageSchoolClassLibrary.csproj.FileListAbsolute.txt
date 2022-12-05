@@ -9,3 +9,4 @@ C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\LanguageS
 C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\LanguageSchoolClassLibrary\LanguageSchoolClassLibrary\obj\Debug\LanguageSchoolClassLibrary.dll
 C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\LanguageSchoolClassLibrary\LanguageSchoolClassLibrary\obj\Debug\LanguageSchoolClassLibrary.pdb
 C:\Users\admin\Desktop\LanguageSchool-newMain\LanguageSchoolManagement\LanguageSchoolClassLibrary\LanguageSchoolClassLibrary\obj\Debug\LanguageSchoolClassLibrary.csproj.ResolveComReference.cache
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\LanguageSchoolClassLibrary\LanguageSchoolClassLibrary\obj\Debug\LanguageSchoolClassLibrary.csproj.ResolveComReference.cache

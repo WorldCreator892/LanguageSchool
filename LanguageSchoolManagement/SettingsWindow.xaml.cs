@@ -27,13 +27,18 @@ namespace LanguageSchoolManagement
 
         private void ButtonClickSave(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Your setting succesfully save!");
+            MessageBox.Show("Your setting were succesfully saved!");
             this.Close();
         }
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             ((Slider)sender).SelectionEnd = e.NewValue;
-
+            if (this.Owner != null)
+            {
+                (this.Owner as MainWindow).GenerationLength = (int)e.NewValue;
+                int a = 0;
+            }       
+            
         }
     }
 }

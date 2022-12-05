@@ -258,3 +258,5 @@ C:\Users\admin\Desktop\LanguageSchool-main\LanguageSchoolManagement\obj\Debug\La
 C:\Users\admin\Desktop\LanguageSchool-main\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CopyComplete
 C:\Users\admin\Desktop\LanguageSchool-main\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.exe
 C:\Users\admin\Desktop\LanguageSchool-main\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.pdb
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\SettingsWindow.g.cs
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\SettingsWindow.baml
