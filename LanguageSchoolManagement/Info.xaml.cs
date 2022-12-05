@@ -194,7 +194,7 @@ namespace LanguageSchoolManagement
             }
             catch (System.Runtime.InteropServices.COMException)
             {
-                MessageBox.Show("Ошибка при сохранении документа. Текущая версия файла может быть сохранена в уже созданный файл при закрытии таблицы.");
+                //MessageBox.Show("Ошибка при сохранении документа. Текущая версия файла может быть сохранена в уже созданный файл при закрытии таблицы.");
             }
 
         }
