@@ -192,11 +192,11 @@ namespace LanguageSchoolClassLibrary
             }
             foreach (Student st in this._students)
             {
-                Random _rnd = new Random();
                 foreach (CourseApplication oldApplication in st.Applications)
                 {
                     oldApplication.WaitingTime = oldApplication.WaitingTime + 1;
-                    oldApplication.GroupID = -1;                    
+                    oldApplication.GroupID = -1;
+                    Random _rnd = new Random();
                     oldApplication.PayedAmount = _rnd.Next(0, 10000);                    
                 }
             }

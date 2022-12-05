@@ -1,0 +1,20 @@
+﻿<Window x:Class="LanguageSchoolManagement.VerificationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LanguageSchoolManagement"
+        mc:Ignorable="d"
+        Title="VerificationWindow" Height="168.103" Width="435.345" Background="#FFC2E9FF">
+    <Grid>
+        <Label Margin="139,10,-139,-10">
+            Chouse a way to load
+        </Label>
+        <Button Content=" Load from text file" Margin="23,44,254,46" Click="СhosenTextLoader" Background="#FF2750A8">
+            
+        </Button>
+        <Button Content=" Make a new student" Margin="238,44,39,46" Click="СhosenMakeNewOne" Background="#FF2750A8">
+
+        </Button>
+    </Grid>
+</Window>

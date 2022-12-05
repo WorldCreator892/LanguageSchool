@@ -19,7 +19,7 @@
                         <RotateTransform Angle="0.057"/>
                         <TranslateTransform/>
                     </TransformGroup>
-                </TextBlock.RenderTransform><Run FontWeight="Bold" Text="Welcome to our Language School Management Simulator!" /><LineBreak /><LineBreak /><Run FontWeight="Bold" Text="To begin generation press the button below:" /><LineBreak /></TextBlock>
+                </TextBlock.RenderTransform><Run FontWeight="Bold" Text="Welcome to our Language School Management Simulator!" /><LineBreak /><LineBreak /><Run FontWeight="Bold" Text="To begin the simulation insert generation parameters using the form below:" /><LineBreak /></TextBlock>
         </StackPanel>
 
         <StackPanel>

@@ -12,8 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-
-
 namespace LanguageSchoolManagement
 {
     /// <summary>
@@ -25,26 +23,17 @@ namespace LanguageSchoolManagement
         public SettingsWindow()
         {
             InitializeComponent();
-            SimulationSlider.Value = Properties.Settings.Default.SimulationSlider;
-            SliderValue = (int)SimulationSlider.Value;
         }
 
         private void ButtonClickSave(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Your setting were succesfully saved!");
+            MessageBox.Show("Your setting succesfully save!");
             this.Close();
         }
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            
             ((Slider)sender).SelectionEnd = e.NewValue;
-            if (this.Owner != null)
-            {
-                (this.Owner as MainWindow).GenerationLength = (int)e.NewValue;
-                Properties.Settings.Default.SimulationSlider =(int)e.NewValue;
-                Properties.Settings.Default.Save();                
-            }       
-            
+
         }
     }
 }
