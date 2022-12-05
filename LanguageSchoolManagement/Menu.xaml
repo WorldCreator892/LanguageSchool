@@ -6,30 +6,35 @@
         xmlns:local="clr-namespace:LanguageSchoolManagement"
         mc:Ignorable="d"
         WindowStartupLocation="CenterOwner"
-        Title="Menu" Height="450" Width="800">
-    <Grid Background="#FFA0C2FF">
+               
+        Title="Menu" Height="450" Width="800" MinHeight="450" MinWidth="800">
+    <Grid Background="#FFA0C2FF" >
+
         <StackPanel Background="#FFA0C2FF" Margin="20,0,21.6,0">
-            <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Normal" FontFamily="Rockwell Extra Bold" OpacityMask="#FFF1F1E1" Background="#FFA0C2FF">
-                <Run FontSize="20" FontWeight="Black" >Памятка:</Run>
+            <TextBlock Name="Highline" TextWrapping="Wrap" TextAlignment="Center" FontStyle="Normal" FontFamily="Rockwell Extra Bold" OpacityMask="#FFF1F1E1" Background="#FFA0C2FF">
+                <Run FontSize="20" FontWeight="Black" >Remainder:</Run>
                 <LineBreak />
             </TextBlock>
-            <TextBlock TextWrapping="Wrap" TextAlignment="Left" FontStyle="Normal" FontFamily="Rockwell Extra Bold" Height="311" >
-                <Run FontSize="15" FontWeight="Black" Foreground="Black" >Данное приложение моделирует работу курсов иностранного языка. Оно позволяет наглядно рассмотреть процесс разбиения учеников на группы по следующим правилам:  </Run>
+            <TextBlock  Name ="TextBlock" TextWrapping="Wrap" TextAlignment="Left" FontStyle="Normal" FontFamily="Rockwell Extra Bold" Height="311" >
+                
+                <Run FontSize="15" FontWeight="Black" Foreground="Black" >This application simulates the work of foreign language courses. It allows you to visually consider the process of dividing students into groups according to the following rules:  </Run>
                 <LineBreak />
                 <LineBreak />
-                <Run FontSize="15" FontWeight="Black" Foreground="Black"> 1)	Курсы иностранного языка предлагают обучение нескольким иностранным языкам на нескольких уровнях и с разной степенью интенсивности. </Run>
+                <Run FontSize="15" FontWeight="Black" Foreground="Black"> 1) Foreign language courses offer instruction in several foreign languages at several levels and with varying degrees of intensity. </Run>
                 <LineBreak />
                 <LineBreak />
-                <Run FontSize="15" FontWeight="Black" Foreground="Black"> 2)	Каждый слушатель может быть записан на обучение нескольким языкам, причем для каждого языка у него может быть свой уровень и интенсивность. </Run>
+                <Run FontSize="15" FontWeight="Black" Foreground="Black"> 2) Each listener can be enrolled in several languages, and for each language he can have his own level and intensity. </Run>
                 <LineBreak />
                 <LineBreak />
-                <Run FontSize="15" FontWeight="Black" Foreground="Black"> 3)	Занятия могут быть индивидуальные и групповые </Run>
+                <Run FontSize="15" FontWeight="Black" Foreground="Black"> 3) Classes can be individual and group</Run>
                 <LineBreak />
                 <LineBreak />
-                <Run FontSize="15" FontWeight="Black" Foreground="Black"> Чтобы корректно смоделировать данный процесс, необходимо заполнить все требуемые поля в выбранных формах и вводить корректные данные. В большинство полей необходимо выбрать правильный (подходящий) вариант, за исключением «Имя» и «Фамилия», их заполняют вручную, используя буквы русского или английского алфавита. </Run>
+                <Run FontSize="15" FontWeight="Black" Foreground="Black"> To correctly simulate this process, it is necessary to fill in all the required fields in the selected forms and enter the correct data. In most fields, you need to choose the correct(suitable) option, except for First Name and Last Name, they are filled in manually using the letters of the Russian or English alphabet. </Run>
                 <LineBreak />
             </TextBlock >
-            <Button Content="Ok" Click="ButtonOkClick" HorizontalAlignment="Center" FontSize="24" Height="46" Width="108" Margin="297,0,345,0" FontFamily="Rockwell Extra Bold" Background="#FF162D6C" Foreground="#FFDCE4F3"/>
         </StackPanel>
+        <Button Content="Ok" Click="ButtonOkClick" HorizontalAlignment="Center" FontSize="24" Height="46" Width="108" Margin="212,349,472,24" FontFamily="Rockwell Extra Bold" Background="#FF162D6C" Foreground="#FFDCE4F3"/>
+            <Button Content="Translate" Click="ButtonTranslateClick" HorizontalAlignment="Center" FontSize="24" Height="46" FontFamily="Rockwell Extra Bold" Background="#FF162D6C" Foreground="#FFDCE4F3" Margin="430,349,213,24" Width="149"/>
+        
     </Grid>
 </Window>
