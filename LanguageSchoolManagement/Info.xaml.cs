@@ -89,22 +89,12 @@ namespace LanguageSchoolManagement
         private void ButtonClickSaveToExcel(object sender, RoutedEventArgs e)
         {
             string file1 = "C:\\Users\\admin\\Desktop\\LanguageSchool-main\\LanguageSchool.xlsx";
-            //Если список языковых школ:
-            //List<LanguageSchool> languageSchools = new List<LanguageSchool>();
-            //for (int i = 0; i < 5; i++)
-            //{
-            //    languageSchool = RandomCourseEventsAndGeneration.GenerateLanguageSchool(PossibleSurnames, PossibleLanguages);
-            //    languageSchool.ReformCourses();
-            //    languageSchools.Add(languageSchool);
-            //}
-            //WorkWithExcel.WriteListLanguageSchoolToExcel(languageSchools, file1);
             try
             {
                 WorkWithExcel.WriteLanguageSchoolToExcel(languageSchool, file1);
             }
             catch (System.Runtime.InteropServices.COMException)
             {
-                //MessageBox.Show("Ошибка при сохранении документа. Текущая версия файла может быть сохранена в уже созданный файл при закрытии таблицы.");
             }
 
         }
