@@ -85,10 +85,8 @@ C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\
 C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\Adding.baml
 C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\Mistake.g.cs
 C:\Users\admin\Desktop\LanguageSchool-master\LanguageSchoolManagement\obj\Debug\Mistake.baml
-D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Menu.g.cs
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Mistake.g.cs
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Result.g.cs
-D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Menu.baml
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Mistake.baml
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Result.baml
 C:\Users\79622\Desktop\Новая папка\LanguageSchool-newMain\LanguageSchoolManagement\bin\Debug\LanguageSchoolManagement.exe.config
@@ -212,7 +210,6 @@ C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolMa
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CopyComplete
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.exe
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.pdb
-D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.AssemblyReference.cache
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Info.g.cs
 D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Info.baml
 C:\Users\79622\Desktop\Новая папка (2)\LanguageSchool\LanguageSchoolManagement\obj\Debug\Info.g.cs
@@ -258,3 +255,8 @@ C:\Users\admin\Desktop\LanguageSchool-main\LanguageSchoolManagement\obj\Debug\La
 C:\Users\admin\Desktop\LanguageSchool-main\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.CopyComplete
 C:\Users\admin\Desktop\LanguageSchool-main\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.exe
 C:\Users\admin\Desktop\LanguageSchool-main\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.pdb
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Instruction.g.cs
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\SettingsWindow.g.cs
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\Instruction.baml
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\SettingsWindow.baml
+D:\WorldCreator892\LanguageSchool\LanguageSchoolManagement\obj\Debug\LanguageSchoolManagement.csproj.AssemblyReference.cache

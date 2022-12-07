@@ -18,7 +18,7 @@
                 </TransformGroup>
             </StackPanel.RenderTransform>
             <TextBlock TextWrapping="Wrap" TextAlignment="Center" FontStyle="Italic" FontFamily="Rockwell Extra Bold" Foreground="#FF133A72">
-                <Run FontSize="20" FontWeight="Bold" > Choice  likely interval for generating (your changes will save for the next time) </Run>
+                <Run FontSize="20" FontWeight="Bold" > Choose generation's time interval (your changes will be saved) </Run>
                 
                 <LineBreak />
             </TextBlock >
@@ -48,7 +48,7 @@
             12 month
         </Label>
         <StackPanel Margin="0,10,0,107" >
-            <Slider Value="3" Minimum="3" Maximum="12" SelectionStart="0" Height="30" IsSelectionRangeEnabled="True" ValueChanged="Slider_ValueChanged"
+            <Slider x:Name="SimulationSlider" Value="3" Minimum="3" Maximum="12" SelectionStart="0" Height="30" IsSelectionRangeEnabled="True" ValueChanged="Slider_ValueChanged"
                 TickPlacement="TopLeft" Margin="45,135,45.2,133.8" Background="#FF1A3570" IsSnapToTickEnabled="True" TickFrequency="1"
                 Ticks="3, 4, 5, 6, 7, 8, 9, 10, 11, 12"/>
         </StackPanel>

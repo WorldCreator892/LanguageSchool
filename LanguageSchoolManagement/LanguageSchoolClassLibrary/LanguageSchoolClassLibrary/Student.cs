@@ -26,7 +26,7 @@ namespace LanguageSchoolClassLibrary
         /// <summary>
         /// Расписание студента, заполняемое идентификаторами групп, в которых он обучается
         /// </summary>
-        private int[] _schedule = new int[7] { 0, 0, 0, 0, 0, 0, 0};
+        private List<KeyValuePair<string, int>>[] _schedule = new List<KeyValuePair<string, int>>[7];
 
         #region Constructors
         /// <summary>
@@ -67,7 +67,7 @@ namespace LanguageSchoolClassLibrary
         /// <summary>
         /// Расписание студента, заполняемое идентификаторами групп, в которых он обучается
         /// </summary>
-        public int[] Schedule
+        public List<KeyValuePair<string, int>>[] Schedule
         {
             get { return _schedule; }
             set { if (value != null) { _schedule = value; } }
@@ -91,7 +91,42 @@ namespace LanguageSchoolClassLibrary
         #endregion
 
         #region Methods
-
+        /// <summary>
+        /// Актуализирует расписание согласно данным о принятых заявках
+        /// </summary>
+        public void SetSchedule()
+        {
+            _schedule = new List<KeyValuePair<string, int>>[7];
+            for(int i = 0; i<7; i++)
+            {
+                _schedule[i] = new List<KeyValuePair<string, int>>();
+            }
+            foreach (CourseApplication c in this.Applications)
+            {
+                if(c.GroupID != -1)
+                {
+                    if(c.Intensity == 2)
+                    {
+                        for(int i = 0; i < 5; i++)
+                        {
+                            _schedule[i].Add(new KeyValuePair<string, int>(c.Language, c.GroupID));
+                        }                        
+                    } else
+                    {
+                        if(c.Intensity == 1)
+                        {
+                            for (int i = 4; i < 7; i++)
+                            {
+                                _schedule[i].Add(new KeyValuePair<string, int>(c.Language, c.GroupID));
+                            }
+                        } else
+                        {
+                            _schedule[0].Add(new KeyValuePair<string, int>(c.Language, c.GroupID));
+                        }
+                    }
+                }
+            }
+        }
         #endregion
 
     }

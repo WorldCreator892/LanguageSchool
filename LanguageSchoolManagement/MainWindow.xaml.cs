@@ -25,7 +25,7 @@ namespace LanguageSchoolManagement
     /// </summary>
     public partial class MainWindow : System.Windows.Window
     {
-        
+        public int GenerationLength = 3;
         public MainWindow()
         {
             InitializeComponent();
@@ -74,8 +74,11 @@ namespace LanguageSchoolManagement
                 "Юлия"
                 }, new List<string>() { "French", "English" });
             l.ReformCourses();
-           // Info f = new Info(l);
+            // Info f = new Info(l);
             //f.ShowDialog();
+            var wds = new SettingsWindow();
+            GenerationLength = wds.SliderValue;
+            wds.Close();
         }
         static void Window_Closing(object sender, CancelEventArgs e)
         {
@@ -104,40 +107,15 @@ namespace LanguageSchoolManagement
             //Если 1 языковая школа:
             LanguageSchool languageSchool = RandomCourseEventsAndGeneration.GenerateLanguageSchool(PossibleSurnames, PossibleLanguages);
             languageSchool.ReformCourses();
-            var wds = new Info(languageSchool);
+            var wds = new Info(languageSchool, GenerationLength);
             wds.Owner = this;
             wds.ShowDialog();
-
-
-
-            //List<string> PossibleSurnames = new List<string>() { "Петров", "Иванов", "Попов", "Ильин",
-            //        "Федоров","Белов","Серов","Игнатов","Чернов","Свиридов","Яров","Шишкин","Котов",};
-            //List<string> PossibleLanguages = new List<string>() { "English", "French", "German", "Chinese" };
-            ////Если 1 языковая школа:
-            //LanguageSchool languageSchool = RandomCourseEventsAndGeneration.GenerateLanguageSchool(PossibleSurnames, PossibleLanguages);
-            //languageSchool.ReformCourses();
-            //string file1 = "C:\\Users\\admin\\Desktop\\LanguageSchool-newMain\\LanguageSchool.xlsx";
-            ////Если список языковых школ:
-            ////List<LanguageSchool> languageSchools = new List<LanguageSchool>();
-            ////for (int i = 0; i < 5; i++)
-            ////{
-            ////    languageSchool = RandomCourseEventsAndGeneration.GenerateLanguageSchool(PossibleSurnames, PossibleLanguages);
-            ////    languageSchool.ReformCourses();
-            ////    languageSchools.Add(languageSchool);
-            ////}
-            ////WorkWithExcel.WriteListLanguageSchoolToExcel(languageSchools, file1);
-            //try
-            //{
-            //    WorkWithExcel.WriteLanguageSchoolToExcel(languageSchool, file1);
-            //}
-            //catch (System.Runtime.InteropServices.COMException)
-            //{
-            //    MessageBox.Show("Ошибка при сохранении документа. Текущая версия файла может быть сохранена в уже созданный файл при закрытии таблицы.");
-            //}
+            
         }
         private void ButtonSettingsClick(object sender, RoutedEventArgs e)
         {
             var wds = new SettingsWindow();
+            wds.Owner = this;
             wds.ShowDialog();
         }
     }
