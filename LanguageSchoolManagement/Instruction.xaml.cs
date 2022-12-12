@@ -43,12 +43,14 @@ namespace LanguageSchoolManagement
 
 3) Classes can be individual and group
 
-To correctly simulate this process, it is necessary to fill in all the required fields in the selected forms and enter the correct data. In most fields, you need to choose the correct(suitable) option, except for First Name and Last Name, they are filled in manually using the letters of the Russian or English alphabet.";
+To correctly simulate this process, it is necessary to choose desired simulation length in setting window.";
                 validate = false;
                 this.FontSize = 15;
+                this.Title = "Instructions";
             }
             else
             {
+                this.Title = "Инструкции";
                 Highline.Text = "Памятка";
                 Highline.FontSize = 20;
                 TextBlock.Text = @"Данное приложение моделирует работу курсов иностранного языка. Оно позволяет наглядно рассмотреть процесс разбиения учеников на группы по следующим правилам:
@@ -59,7 +61,7 @@ To correctly simulate this process, it is necessary to fill in all the required 
 
 3)	Занятия могут быть индивидуальные и групповые
 
- Чтобы корректно смоделировать данный процесс, необходимо заполнить все требуемые поля в выбранных формах и вводить корректные данные. В большинство полей необходимо выбрать правильный (подходящий) вариант, за исключением «Имя» и «Фамилия», их заполняют вручную, используя буквы русского или английского алфавита.";
+ Чтобы корректно смоделировать этот процесс, необходимо выбрать желаемую продолжительность моделирования в окне настройки.";
                 validate = true;
                 this.FontSize = 15;
             }

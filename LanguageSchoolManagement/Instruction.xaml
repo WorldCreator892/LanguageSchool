@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterOwner"
                
-        Title="Menu" Height="450" Width="800" MinHeight="450" MinWidth="800">
+        Title="Instruction" Height="450" Width="800" MinHeight="450" MinWidth="800">
     <Grid Background="#FFA0C2FF" >
 
         <StackPanel Background="#FFA0C2FF" Margin="20,0,21.6,0">
@@ -23,13 +23,13 @@
                 <Run FontSize="15" FontWeight="Black" Foreground="Black"> 1) Foreign language courses offer instruction in several foreign languages at several levels and with varying degrees of intensity. </Run>
                 <LineBreak />
                 <LineBreak />
-                <Run FontSize="15" FontWeight="Black" Foreground="Black"> 2) Each listener can be enrolled in several languages, and for each language he can have his own level and intensity. </Run>
+                <Run FontSize="15" FontWeight="Black" Foreground="Black"> 2) Each listener can be enrolled in several language courses, and for each language he can have his own level and intensity. </Run>
                 <LineBreak />
                 <LineBreak />
-                <Run FontSize="15" FontWeight="Black" Foreground="Black"> 3) Classes can be individual and group</Run>
+                <Run FontSize="15" FontWeight="Black" Foreground="Black"> 3) Classes can be individual and group. </Run>
                 <LineBreak />
                 <LineBreak />
-                <Run FontSize="15" FontWeight="Black" Foreground="Black"> To correctly simulate this process, it is necessary to fill in all the required fields in the selected forms and enter the correct data. In most fields, you need to choose the correct(suitable) option, except for First Name and Last Name, they are filled in manually using the letters of the Russian or English alphabet. </Run>
+                <Run FontSize="15" FontWeight="Black" Foreground="Black"> To correctly simulate this process, it is necessary to choose desired simulation length in setting window. </Run>
                 <LineBreak />
             </TextBlock >
         </StackPanel>

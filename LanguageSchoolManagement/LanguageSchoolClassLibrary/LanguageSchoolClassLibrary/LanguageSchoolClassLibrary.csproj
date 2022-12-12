@@ -48,7 +48,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomCourseEventsAndGeneration.cs" />
     <Compile Include="Student.cs" />
-    <Compile Include="WorkWithExcel.cs" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">

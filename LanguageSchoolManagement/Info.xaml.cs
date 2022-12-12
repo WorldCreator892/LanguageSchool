@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using LanguageSchoolClassLibrary;
+using ILanguageSchoolSaveRead;
+using SaveToExcel;
 
 namespace LanguageSchoolManagement
 {
@@ -88,10 +90,10 @@ namespace LanguageSchoolManagement
         }
         private void ButtonClickSaveToExcel(object sender, RoutedEventArgs e)
         {
-            string file1 = "C:\\Users\\admin\\Desktop\\LanguageSchool-main\\LanguageSchool.xlsx";
+            string file1 = "H:\\LanguageSchool-main\\LanguageSchool.xlsx";
             try
             {
-                WorkWithExcel.WriteLanguageSchoolToExcel(languageSchool, file1);
+                SaveToExcel(new WorkWithExcel(), languageSchool, file1);                
             }
             catch (System.Runtime.InteropServices.COMException)
             {
@@ -354,6 +356,11 @@ namespace LanguageSchoolManagement
                     }
                 }
             }
+        }
+
+        private void SaveToExcel(ILanguageSchoolSaveReader SaveReader, LanguageSchool l, string SaveAs)
+        {
+            SaveReader.WriteLanguageSchoolToExcel(l, SaveAs);
         }
     }
 

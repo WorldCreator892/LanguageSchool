@@ -1,0 +1,9 @@
+H:\LanguageSchool-main\ILanguageSchoolSaveRead\bin\Debug\ILanguageSchoolSaveRead.dll
+H:\LanguageSchool-main\ILanguageSchoolSaveRead\bin\Debug\ILanguageSchoolSaveRead.pdb
+H:\LanguageSchool-main\ILanguageSchoolSaveRead\bin\Debug\LanguageSchoolClassLibrary.dll
+H:\LanguageSchool-main\ILanguageSchoolSaveRead\bin\Debug\LanguageSchoolClassLibrary.pdb
+H:\LanguageSchool-main\ILanguageSchoolSaveRead\obj\Debug\ILanguageSchoolSaveRead.csproj.CoreCompileInputs.cache
+H:\LanguageSchool-main\ILanguageSchoolSaveRead\obj\Debug\ILanguageSchoolSaveRead.csproj.CopyComplete
+H:\LanguageSchool-main\ILanguageSchoolSaveRead\obj\Debug\ILanguageSchoolSaveRead.dll
+H:\LanguageSchool-main\ILanguageSchoolSaveRead\obj\Debug\ILanguageSchoolSaveRead.pdb
+H:\LanguageSchool-main\ILanguageSchoolSaveRead\obj\Debug\ILanguageSchoolSaveRead.csproj.AssemblyReference.cache

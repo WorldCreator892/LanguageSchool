@@ -19,7 +19,8 @@ namespace LanguageSchoolClassLibrary
         /// <summary>
         /// Список всех возможных фамилий студентов
         /// </summary>
-        private static List<string> _surnameList = new List<string>() { "GoodSurname", "NiceSurname", "SpecialSurname", "GreatSurname", "SurnameSurname" };
+        private static List<string> _surnameList = new List<string>() { "Петров", "Иванов", "Попов", "Ильин",
+                    "Федоров","Белов","Серов","Игнатов","Чернов","Свиридов","Яров","Шишкин","Котов" };
         /// <summary>
         /// Список всех обучающихся курса
         /// </summary>
